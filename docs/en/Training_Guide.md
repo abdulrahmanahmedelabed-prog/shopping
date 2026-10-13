@@ -451,9 +451,10 @@ For shops registered in **Saudi Arabia** (Fatoora — phase 2, integration) or *
    | 🛵 **Orders** | Open online orders with their items: **👨‍🍳 Preparing** → **✅ Ready** (opens WhatsApp with a message to the customer), or cancel. Converting to an invoice is done at the point of sale |
    | ✨ **Ask** | Ask your shop in your own words (Max plan) |
    Stock counts, low stock and customers are in Plus and above, orders come with the online store (Pro), and pages refresh by themselves every 30 seconds.
-6. From the app menu (⋮): **Owner dashboard**, **Store**, or change shop.
-7. If the computer's address changes (for example after the router restarts), the app finds it again automatically.
-8. It follows the phone's dark/light mode automatically.
+6. **Offline copy (away from the shop):** each time the app connects to the shop it asks: **🔄 Sync and save a copy on this phone** or **🟢 Stay connected** (works live as before). Syncing keeps the shop data up to the **last close** on the phone: every till's last closing (Z report: sales, cash, card, wallets, credit, refunds, drawer in/out, expected, counted and the difference), this month's sales, the last 30 days day by day, every item's price and stock, low stock and customer debts — only what the user's permissions allow. Away from the shop Wi-Fi, the app offers **📴 Open offline copy**, or use the menu (⋮) → **📴 Offline copy**. It is view only and clearly shows the time of the last sync. Tick **Sync automatically on every connection** to skip the question. Signing out deletes the copy from the phone. On iPhone or a browser use **📥 Download offline copy** on the home tab: one file that opens without a connection.
+7. From the app menu (⋮): **🔄 Sync offline copy**, **Owner dashboard**, **Store**, or change shop.
+8. If the computer's address changes (for example after the router restarts), the app finds it again automatically.
+9. It follows the phone's dark/light mode automatically.
 
 > **One time only:** if an old version of the app is on the phone and updating shows "App not installed", uninstall the old version and install the new one. Later updates install over it directly.
 
