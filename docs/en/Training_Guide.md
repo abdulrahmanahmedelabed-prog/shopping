@@ -8,7 +8,7 @@
 >
 > **Intro video:** Help → **🎬 Intro video** (one minute).
 >
-> **Switching language:** the **🌐 العربية / English** button at the top switches the whole interface instantly.
+> **Switching language:** the **🌐 EN / ع** button at the top switches the whole interface instantly.
 
 ---
 
@@ -402,7 +402,7 @@ Each branch runs its own copy, and the owner sees all branches in one report:
 | **Connected e-invoicing** | Settings → E-invoicing | Link your invoices to the tax platform: Fatoora in Saudi Arabia or JoFotara in Jordan (part 5.18) |
 | **Round every invoice up** | Settings → Sales & inventory | Makes the **⬆ Whole number** button active by default on every invoice |
 | **Extra currencies** | Settings → Currency & tax | For example `USD=3.65,JOD=5.15`; a button appears for each currency in the payment window |
-| **Language** | The **🌐 العربية / English** button at the top, or Settings → Shop details | The interface changes instantly without logging in again, stays on the same screen, and an open cart stays as it is |
+| **Language** | The **🌐 EN / ع** button at the top, or Settings → Shop details | The interface changes instantly without logging in again, stays on the same screen, and an open cart stays as it is |
 | **Small screens** | Automatic | On laptops and small screens the menu folds into icons (hover over an icon to see its name), and the point of sale rearranges its buttons so they're always visible |
 
 ### 5.18 Connected e-invoicing with the tax platform (optional)
@@ -434,7 +434,7 @@ For shops registered in **Saudi Arabia** (Fatoora — phase 2, integration) or *
 ## 6. Mobile: the app, owner dashboard and online store
 
 ### 6.1 The mobile app (Android)
-1. On the shop's main computer, click the **📱 button at the top** (or Help → **📲 Link your phone**, or ask "how do I pair my phone?"). A window opens with two codes:
+1. On the shop's main computer open ❓ Help → **📲 Link your phone** (or ask "how do I pair my phone?"). A window opens with two codes:
    - **Download code:** scan it with the phone camera to download the Android app. Install it; it asks for no permissions.
    - **Pairing code:** the shop computer's address on the network.
    If it shows "🔴 The phone service is off", click **▶ Start the phone service on this computer** (once; it keeps running on every start).
@@ -541,7 +541,7 @@ Do them in order. After each exercise, check the expected result.
 | Profit in "Reports" differs from what you expected | Check unrecorded expenses, damaged stock, and item costs (a zero cost inflates profit!) |
 | The balance sheet shows a difference between physical and book inventory | Caused by selling with negative stock or editing costs manually. Count the items with negative quantities |
 | "Owner's account" is a large number | Normal: it's the total the owner took from the drawers. It isn't a loss |
-| Where is the phone pairing code? | The **📱** button at the top (on narrow screens: Help → **📲 Link your phone**) |
+| Where is the phone pairing code? | ❓ Help → **📲 Link your phone** |
 | An e-invoice is "Rejected" | Settings → E-invoicing → 📋 Log: read the platform's message (usually business details: VAT number or address), fix and save, then **🔁 Resend** |
 | "Waiting for the device to be linked with Fatoora" | Linking isn't complete: 🔗 Link this computer with a new OTP. Invoices saved before linking are signed and sent automatically afterwards |
 | The JoFotara QR code doesn't print | The system didn't respond within 5 seconds (internet). The invoice was sent later: reprint it from the invoice log and the code appears |
