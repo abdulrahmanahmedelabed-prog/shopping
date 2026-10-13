@@ -50,7 +50,8 @@ img { max-width: 100%; }
 .nav a:hover { background: var(--blue-soft); color: var(--blue); }
 .cta-top { background: var(--blue); color: #fff !important; font-weight: 700; }
 .nav a.cta-top { flex: 0 0 auto; }
-@media (max-width: 720px) { .nav a:not(.cta-top) { display: none; } .nav { overflow: visible; } .brand small { display: none; } }
+.nav a.lang { flex: 0 0 auto; font-weight: 700; color: var(--blue); border-color: var(--line); }
+@media (max-width: 720px) { .nav a:not(.cta-top):not(.lang) { display: none; } .nav { overflow: visible; } .brand small { display: none; } }
 
 /* ===== الواجهة: لوحة داكنة مثل لوحة الإجمالي في نقطة البيع ===== */
 .hero { background: radial-gradient(1100px 500px at 15% 10%, rgba(37,99,235,.45), transparent 60%), radial-gradient(800px 400px at 90% 90%, rgba(22,163,74,.25), transparent 60%), linear-gradient(160deg, #0b1220, #0f172a 55%, #172554); color: #e2e8f0; padding: 64px 0 80px; overflow: hidden; }
@@ -233,6 +234,7 @@ code { background: var(--blue-soft); color: var(--blue); border-radius: 6px; pad
       <a href="#screens">الشاشات</a>
       <a href="#plans">الأسعار</a>
       <a href="#compare">المقارنة</a>
+      <a class="lang" href="en.html" lang="en" hreflang="en" title="English">EN</a>
       <a class="cta-top" href="#download">⬇ تحميل</a>
     </nav>
   </div>
@@ -374,7 +376,7 @@ code { background: var(--blue-soft); color: var(--blue); border-radius: 6px; pad
         <li>🔍 <b>الأسعار والجرد</b> بكاميرا الجوال</li>
         <li>👥 <b>الديون</b> مع تذكير واتساب واتصال</li>
         <li>🛵 <b>تجهيز الطلبات</b> وإبلاغ الزبون</li>
-        <li>📱 الربط: زر <b>📱</b> أعلى البرنامج يعرض رمز التحميل ورمز الربط</li>
+        <li>📱 الربط: من <b>المساعدة ← ربط الجوال</b> في البرنامج: رمز التحميل ورمز الربط</li>
       </ul>
     </div>
     <div class="phones">
@@ -461,7 +463,7 @@ code { background: var(--blue-soft); color: var(--blue); border-radius: 6px; pad
     <p>تواصل معنا مباشرة على واتساب.</p>
     <div class="btns" style="justify-content:center">
       <a class="btn white" href="https://wa.me/970592458157">💬 واتساب <span class="ltr">+970 59 245 8157</span></a>
-      <a class="btn ghost" href="https://github.com/abdulrahmanahmedelabed-prog/shopping/blob/HEAD/docs/Product_Sheet_EN.md">English product sheet</a>
+      <a class="btn ghost" href="en.html" lang="en" hreflang="en">🌐 English</a>
     </div>
   </div>
 </div>
