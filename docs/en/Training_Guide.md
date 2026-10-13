@@ -326,7 +326,15 @@ An expense paid from the drawer of a closed shift can't be deleted (its cash cou
 - **Tamper seal:** every invoice and every line of the activity log is sealed with a chained digital fingerprint. If anyone edits or deletes an invoice directly in the data file (outside the program), it shows up as a critical finding with the invoice number.
 > The audit sees everything recorded in the program, but not what was never recorded; physical stock counts and cash counts are still essential.
 
-### 5.13.2 Shop assistant 🧭 (Max plan; zakat in Pro)
+### 5.13.2 Financial oversight 🏛 (visit of a financial inspector or tax auditor)
+1. **Before the visit:** 🏛 Financial oversight ← **✅ Readiness** ← pick the period ← **▶ Check readiness**. Fix the red ⛔ items first (the action is written next to each), then the yellow ⚠ ones. Print the result if you like.
+2. **Data file:** **📦 Inspector file** ← the period the inspector asks for ← **📦 Prepare inspector file** ← choose where to save (a USB stick, for example). It runs in the background while you keep selling. Inside, “00_اقرأني” explains the contents and contains the **handover record** to sign, with the **overall fingerprint** to write on it.
+3. **When they arrive:** **👤 Inspector accounts** ← **+ New inspector account** ← name, agency and duration (7 days by default) ← **Create account**. Print the sign-in details and hand them over; the password is shown only once. They sign in on any shop computer and see the books and reports **view only**, with “Inspector mode: view only” at the top of the window.
+4. **During and after the visit:** **📜 Inspector access log** shows everything they opened, with the time. **⏱ Extend** adds 3 days and **⛔ Revoke account** stops it at once; otherwise it expires on its own.
+5. **🔍 Verify a previous file:** confirms that the inspector file you handed over has not changed (useful if any dispute arises later).
+- Ask your shop: “am I ready for the inspector?” gives the verdict and what to fix first.
+
+### 5.13.3 Shop assistant 🧭 (Max plan; zakat in Pro)
 From the menu: **🧭 Shop assistant** — four tabs:
 
 **💬 Ask your shop** — type your question the way you'd ask your accountant and press Enter:
