@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232563EB%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22%3E🏪%3C/text%3E%3C/svg%3E">
+<title>Complete training guide — المحاسبة ونقاط البيع</title>
+<style>
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_400Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_700Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root { --bg: #f1f5f9; --surface: #ffffff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0; --blue: #2563eb;
+  --blue-soft: #dbeafe; --code: #f8fafc; --shadow: 0 1px 2px rgba(15,23,42,.05), 0 10px 30px rgba(15,23,42,.07); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b1220; --surface: #131c2e; --text: #e2e8f0;
+  --muted: #94a3b8; --line: #23324a; --blue: #60a5fa; --blue-soft: #172554; --code: #0f172a; --shadow: none; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 "Plex Arabic", "Segoe UI", Tahoma, system-ui, sans-serif; }
+a { color: var(--blue); }
+.top { position: sticky; top: 0; z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; }
+.logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.links { margin-inline-start: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.links a { text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 15px; }
+.links a.dl { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 700; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 28px clamp(16px, 4vw, 44px); margin: 24px auto 40px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.35; margin-top: 0; }
+h2 { margin-top: 1.8em; padding-top: .4em; border-top: 1px solid var(--line); }
+h3 { margin-top: 1.4em; }
+img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+blockquote { margin: 1em 0; padding: 10px 16px; border-inline-start: 4px solid var(--blue); background: var(--blue-soft); border-radius: 10px; }
+code { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; font-size: .92em; }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow-x: auto; direction: ltr; }
+pre code { border: 0; padding: 0; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: start; vertical-align: top; }
+th { background: var(--blue-soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+hr + h2, hr + a + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.cards a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); font-weight: 700; }
+.cards a:hover { border-color: var(--blue); background: var(--blue-soft); }
+footer { color: var(--muted); text-align: center; padding: 0 16px 32px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <a class="brand" href="../en.html"><span class="logo">🏪</span><span>المحاسبة ونقاط البيع</span></a>
+  <span class="links"><a href="index.html">📚 All guides</a><a href="../en.html">Home</a><a class="dl" href="../en.html#download">⬇ Download</a></span>
+</div></div>
+<div class="wrap"><article>
+<h1>Complete Training Guide</h1>
+<blockquote><p><b>Who is this for?</b> Shop owners, managers and cashiers. Every part is written step by step.</p>
+<p><b>Practice without fear:</b> open <b>"Training copy"</b> from the Windows Start menu, or from inside the program: the <b>🎓 Training copy</b> link on the login screen or the <b>🎓 Training copy</b> button on the Help screen (it opens in a separate window while your program stays open). It contains a complete demo supermarket with <b>3 years of trading history</b> (daily sales with seasons, shifts, purchases, debts, cheques, e-payments), stored separately so it <b>never touches your shop's data</b>. The first launch takes a minute or two to prepare. Training copy logins: <code>admin</code> / <code>admin</code> (administrator) or <code>cashier</code> / <code>1234</code> (cashier). It also includes <b>online orders</b> for the last two months in every status, <b>former employees</b> with their salaries and payslips, and <b>three branches</b> (Hebron, Ramallah and Nablus) that appear together in the branches report.</p>
+<p><b>Intro video:</b> Help → <b>🎬 Intro video</b> (one minute).</p>
+<p><b>Switching language:</b> the <b>🌐 EN / ع</b> button at the top switches the whole interface instantly.</p></blockquote>
+<hr>
+<h2>Contents</h2>
+<ol>
+<li><a href="#1">Key concepts in 5 minutes</a>
+</li>
+<li><a href="#2">Installation and first run</a>
+</li>
+<li><a href="#3">Plans and activation</a>
+</li>
+<li><a href="#4">A cashier's working day</a>
+</li>
+<li><a href="#5">Manager and owner tasks</a>
+</li>
+<li><a href="#6">Mobile: the app, owner dashboard and online store</a>
+</li>
+<li><a href="#7">Hands-on exercises</a>
+</li>
+<li><a href="#8">FAQ and troubleshooting</a>
+</li>
+</ol>
+<hr>
+<a id="1"></a>
+<h2>1. Key concepts in 5 minutes</h2>
+<div class="table"><table><tr><th>Concept</th><th>Meaning</th></tr><tr><td><b>Roles</b></td><td><b>System administrator</b> (everything), <b>Store manager</b> (everything except settings and users), <b>Cashier</b> (sales, invoices, customers, cash drawer)</td></tr><tr><td><b>Manager approval</b></td><td>If a cashier needs a restricted action (big discount, price change, exceeding a credit limit), a window appears where the manager types their name and password on the spot; it is recorded in the activity log</td></tr><tr><td><b>Shift</b></td><td>A cashier's working period on one till: it starts with the cash in the drawer and ends with counting the cash. It reveals shortages and overages</td></tr><tr><td><b>Unit</b></td><td>Each item has a base unit (piece) and can have larger units (carton = 24 pieces) with their own barcode and price</td></tr><tr><td><b>Batch</b></td><td>A quantity of an item with one expiry date. The program sells the soonest-to-expire first</td></tr><tr><td><b>Credit</b></td><td>Selling on account to a registered customer (the credit book)</td></tr><tr><td><b>Main and secondary tills</b></td><td>In shops with several cashiers: one main computer keeps the data, the others connect to it over the shop network</td></tr></table></div>
+<p><b>Important rule:</b> everything is saved immediately — there is no general "Save" button. A backup is taken automatically every day and when the program closes.</p>
+<hr>
+<a id="2"></a>
+<h2>2. Installation and first run</h2>
+<h3>2.1 Installation</h3>
+<ol>
+<li>Run <b>ShopAccounting-Setup</b> → Next → Install.
+</li>
+<li>A program shortcut appears on the desktop, and a <b>"Training copy"</b> shortcut in the Start menu.
+</li>
+<li>On first run Windows Firewall may ask: choose <b>Allow</b> (needed for other tills and for phones).
+</li>
+</ol>
+<h3>2.2 First login</h3>
+<ol>
+<li>User <code>admin</code>, password <code>admin</code>.
+</li>
+<li>The program asks you to <b>change the password immediately</b>. Choose one you'll remember and keep it with the owner.
+</li>
+<li>The <b>first-time setup wizard</b> appears:
+<ul>
+<li>Shop name, phone, address, currency, country and VAT.
+</li>
+<li><b>Shop type:</b> "Small shop" opens the simple mode (sales, inventory, debts, reports); "Supermarket or large shop" opens all screens. You can change this later.
+</li>
+<li><b>Touch-screen till:</b> if the cashier computer has a touch screen.
+</li>
+</ul>
+</li>
+<li>Click <b>Start ✓</b>.
+</li>
+</ol>
+<h3>2.3 Preparing your data (the most important hour with the program)</h3>
+<p>In this order:</p>
+<ol>
+<li><b>Users:</b> Settings → Users → "+ User" for each cashier (role: cashier).
+</li>
+<li><b>Printer:</b> Settings → Printing &amp; cash drawer → choose the printer and paper width (80 or 58 mm) → "Preview a test receipt".
+</li>
+<li><b>Shop logo (optional):</b> Settings → Shop details → <b>🖼 Choose logo...</b> Any image works; the program prepares a color version for screens and A4 reports and a black-and-white one for the receipt printer.
+</li>
+<li><b>Products</b> — three ways:
+<ul>
+<li><b>Fastest:</b> Inventory → <b>📤 Export to Excel</b> to get a file with the right columns, fill it with your items, save it as <b>CSV UTF-8</b>, then <b>📥 Import from Excel</b>.
+</li>
+<li><b>By scanning:</b> in the point of sale scan any unknown barcode → the program asks "Add it as a new product?".
+</li>
+<li><b>Manually:</b> Inventory → <b>+ New product</b>.
+</li>
+</ul>
+</li>
+<li><b>Items without a barcode</b> (bread, vegetables): in the product card click <b>Generate</b> for an internal barcode, and tick "Favorite" to show it as a quick button in the point of sale.
+</li>
+<li><b>Weighed items:</b> for butchers and greengrocers, put the <b>scale code (PLU)</b> in the product card, using the same number programmed in the scale.
+</li>
+<li><b>Cartons:</b> in the product card → "+ Add unit": carton, 24 pieces, the carton barcode, its price.
+</li>
+<li><b>Your old credit book:</b>
+<ul>
+<li>Customers → <b>📥 Import credit book from Excel</b> → "Save empty template".
+</li>
+<li>Fill in the template (name, phone, address, current debt, credit limit), save it as <b>CSV UTF-8</b>, then import it.
+</li>
+<li>Duplicate names are skipped, and any error is shown with its line number.
+</li>
+<li>Do the same for suppliers from the suppliers screen.
+</li>
+</ul>
+</li>
+<li><b>Capital and bank (optional):</b> Accounting → "Financial transaction" → "Opening bank balance" or "Capital deposit".
+</li>
+</ol>
+<hr>
+<a id="3"></a>
+<h2>3. Plans and activation</h2>
+<p>For the <b>first 30 days you get the full 👑 Max plan free</b> (every feature, unlimited tills). After that the program runs on the <b>🌱 Free plan</b>: selling, inventory, debts and basic reports <b>never stop</b>, and advanced features show a 🔒 lock. To upgrade to ⚡ Plus, 💎 Pro or 👑 Max you need an "activation key" for your computer, sent by your program provider.</p>
+<ul>
+<li><b>To see your plan and compare plans:</b> click the plan badge at the top (for example "👑 Max • 23-day trial") or the <b>💎 Plans &amp; upgrade</b> button.
+</li>
+<li><b>What each plan includes:</b> Free covers selling, inventory, debts and reports; Plus adds the smart advisor, smart reordering, offers, cheques, installments and stock counting from the phone (the mobile app for price checks is available on every plan); Pro adds accounting, the financial audit, payroll, the online store, the owner dashboard and zakat; Max adds the shop assistant and branches.
+</li>
+</ul>
+<p><b>Activation steps (from an administrator account):</b></p>
+<ol>
+<li>Click <b>💎 Plans &amp; upgrade</b> → <b>🔑 I have an activation key</b>, or Settings → <b>License &amp; activation</b>. (Or click <b>"Get Pro"</b>, for example, in the plan comparison — the request reaches your provider on WhatsApp.)
+</li>
+<li><b>This device's code</b> appears (like <code>4F1A-9C03-7B2E-D5A8</code>). Click <b>📱 Request activation via WhatsApp</b>; the message is ready with the device code and shop name. (Or <b>📋 Copy</b> and send it any way you like.)
+</li>
+<li>Your provider sends you the <b>activation key</b>: a long text starting with <code>SA1.</code>
+</li>
+<li>Copy the whole key, paste it in the box and click <b>✓ Activate</b>.
+</li>
+<li>The message "Activated successfully ✓" appears.
+</li>
+</ol>
+<p><b>Important:</b></p>
+<ul>
+<li>The key works on <b>this computer only</b>. If you change computers, send the new device code to your provider.
+</li>
+<li>In shops with several tills: activate <b>the main computer only</b>; the others follow it.
+</li>
+<li>If a subscription ends, the program returns to Free: <b>selling never stops</b>, your data, reports and debts stay available, and your features come back as soon as you renew.
+</li>
+</ul>
+<hr>
+<a id="4"></a>
+<h2>4. A cashier's working day</h2>
+<h3>4.1 Start of shift</h3>
+<ol>
+<li>Log in with your own name (not the manager's).
+</li>
+<li>The first sale asks you to <b>open a shift</b>: count the cash in the drawer (the change) and type the amount → <b>🔓 Open shift</b>.
+</li>
+<li>Anything that takes cash out of or puts cash into the drawer (a debt paid in cash, paying a supplier from the drawer, an expense from the drawer, a cash refund) needs an open shift, so the cash count at the end of the day matches what really happened.
+</li>
+</ol>
+<h3>4.2 Selling — the fast way</h3>
+<div class="table"><table><tr><th>You want to</th><th>Do this</th></tr><tr><td>Add an item</td><td>Scan the barcode (or type part of the name and press Enter)</td></tr><tr><td>3 pieces at once</td><td>Type <code>3*</code> then scan the barcode</td></tr><tr><td>A weighed item</td><td>Scan the scale label — the weight is read automatically</td></tr><tr><td>Increase/decrease quantity</td><td><b>+</b> or <b>−</b></td></tr><tr><td>Remove a line</td><td><b>Delete</b></td></tr><tr><td>Type a quantity</td><td><b>F8</b></td></tr><tr><td>Carton instead of piece</td><td>Scan the carton barcode, or <b>F5</b> on the line</td></tr><tr><td>A different price</td><td><b>F10</b> (cashiers need manager approval)</td></tr><tr><td>Invoice discount</td><td><b>F9</b> (amount or percentage; above the limit it needs manager approval)</td></tr><tr><td>Customer asks "how much is this?"</td><td>The <b>🔍 Price check</b> button — not added to the invoice</td></tr><tr><td>Exact cash, no window</td><td><b>F12</b></td></tr><tr><td>Pay</td><td><b>F2</b>, or <b>Enter</b> with an empty search box</td></tr><tr><td>No small change</td><td>The <b>⬆ Whole number</b> button under the total: 19.40 becomes 20.00 (see below)</td></tr></table></div>
+<p><b>⬆ Whole number (round up):</b> rounds the invoice total up to the next whole number so the cashier doesn't need small change. Make it the default for every invoice in Settings → Sales &amp; inventory, and switch it off for a single invoice with the same button.</p>
+<ul>
+<li><b>In the books:</b> the difference (0.60, for example) is not added to item prices or their VAT; it goes to a separate account, <b>"Invoice rounding differences"</b>, under other income, so VAT stays correct and every item keeps its price.
+</li>
+<li><b>On the receipt:</b> a "Rounding" line appears before the total.
+</li>
+<li><b>On returns:</b> a partial return refunds item prices only; returning the whole invoice also refunds the rounding and reverses it from its account.
+</li>
+<li><b>In the audit:</b> the auditor checks that every rounding is below 1, and flags a cashier who rounds far more often than colleagues.
+</li>
+</ul>
+<p><b>Offers apply themselves:</b> if an item has an offer (such as "buy 2 get 1 free") a 🎁 line appears under the total with the discount. You don't need to do anything.</p>
+<h3>4.3 The payment window</h3>
+<ol>
+<li><b>Cash:</b> type what the customer gave you, or click a banknote button (10, 20, 50...). The <b>change</b> appears in large digits.
+</li>
+<li><b>Card:</b>
+<ul>
+<li>If the card terminal is connected to the program: click <b>💳 Pay by card on the terminal</b>. The amount goes to the terminal and the customer taps or inserts the card. When approved, the payment is recorded and the approval code is printed on the receipt. If declined, the bank's message appears and you choose another method.
+</li>
+<li>Without a connection: type the amount on the bank terminal, then in the "Card / transfer" field (or "Full amount by card").
+</li>
+</ul>
+</li>
+<li><b>E-wallet or banking app:</b> click the method's button (such as <b>📲 PalPay</b>). You and the customer (on the customer display) see your account number, a QR code and the amount. The customer pays in their app and shows you the confirmation: check the amount and your shop's name, type the <b>transaction number</b>, then <b>✓ Payment received</b>. If part is paid in cash, type it in the cash field first; the rest goes to the wallet.
+</li>
+<li><b>Split:</b> part cash and part card or wallet.
+</li>
+<li><b>Another currency</b> (if the manager enabled it): the 💱 button for the currency → type what the customer paid in it, and the program calculates the change in the shop's currency.
+</li>
+<li><b>On credit:</b> choose the customer first (<b>F4</b>), then "Rest on the customer's account" or "Full amount on credit".
+</li>
+<li><b>Enter</b> completes the sale. The receipt prints if printing is on, and the cash drawer opens.
+</li>
+</ol>
+<blockquote><p>On touch screens a large number pad appears in the payment window.</p></blockquote>
+<h3>4.4 Regular customers and loyalty points</h3>
+<ol>
+<li><b>F4</b> → search by name or phone (or "+ New customer").
+</li>
+<li>The button shows the customer's debt and 🎁 points.
+</li>
+<li>To redeem points: the <b>🎁 Redeem points</b> button → type the number of points → it is deducted from the invoice.
+</li>
+<li>After the sale "🎁 +25 points" appears and the points are printed on the receipt.
+</li>
+<li>"Wholesale" customers: when selected, prices switch to wholesale prices automatically.
+</li>
+</ol>
+<h3>4.5 Everyday situations</h3>
+<div class="table"><table><tr><th>Situation</th><th>Solution</th></tr><tr><td>The customer forgot something and will come back</td><td><b>F6 Hold</b> the invoice, serve the next customer, then <b>F7</b> to recall it</td></tr><tr><td>Print the last invoice again</td><td><b>F11</b></td></tr><tr><td>Open the drawer to give change</td><td>The <b>💰 Open drawer</b> button (recorded in the activity log)</td></tr><tr><td>An expired item shows a red ⛔ warning</td><td>Don't sell it; tell the manager to write it off from the expiry screen</td></tr><tr><td>The customer wants to return an item</td><td>Invoices &amp; returns → search by invoice number → <b>↩ Return</b> → choose the quantity (the refund uses <b>the selling price on that invoice</b>, even if the item's price changed since, and the same discount ratio) → refund method: cash, against their debt, <b>to the card</b> or <b>to the same wallet</b> if the invoice was paid that way (the program suggests the original payment method, and never refunds more to a card or wallet than was paid with it). If the invoice was on credit and they still owe money, don't refund more cash than they paid: choose "Against the debt"</td></tr><tr><td>A customer pays off a debt</td><td>Customers → select them → <b>💰 Receive payment</b></td></tr><tr><td>A customer gives a cheque for their debt</td><td>Customers → select them → <b>📥 Receive cheque</b> (needs manager permission)</td></tr><tr><td>An online order is ready for pickup</td><td>🛵 Online orders → <b>🧾 Convert to invoice</b> → pay as usual</td></tr></table></div>
+<h3>4.6 If the network goes down (shops with several tills)</h3>
+<ul>
+<li>A yellow "⚠ Offline mode" bar appears, and you <b>keep selling</b> in cash, by card or by wallet.
+</li>
+<li><b>Not possible while offline:</b> credit sales, choosing a customer, loyalty points, returns.
+</li>
+<li>When the connection returns, invoices move <b>by themselves</b> to the main computer with their original times, without duplicates.
+</li>
+</ul>
+<h3>4.7 End of shift</h3>
+<ol>
+<li>Cash &amp; shifts → <b>🔒 Close shift and count cash</b>.
+</li>
+<li>Count the cash by denomination (200, 100, 50...) — the program adds it up. Foreign currency is counted at its value in the shop's currency.
+</li>
+<li>The <b>expected</b>, <b>counted</b> and <b>difference</b> (shortage or overage) appear.
+</li>
+<li><b>🖨 Print the shift report</b> and hand it with the cash to the manager.
+</li>
+</ol>
+<blockquote><p><b>Golden rule for cashiers:</b> never take money from or put money in the drawer without recording it: use <b>⬆ Cash withdrawal</b> or <b>⬇ Cash deposit</b> with a reason. Otherwise a shortage or overage will appear under your name.</p></blockquote>
+<hr>
+<a id="5"></a>
+<h2>5. Manager and owner tasks</h2>
+<h3>5.1 Every morning (5 minutes)</h3>
+<ol>
+<li><b>🤖 Smart advisor:</b> recommendations ordered from most serious (⛔ red) to positive (✅ green). Each has a link to the right action: a profitable item about to run out, stock close to expiry, a customer who stopped buying, a repeated cash shortage...
+</li>
+<li><b>Dashboard:</b> yesterday's sales, low stock, expiry, <b>cheques due within a week</b>.
+</li>
+<li><b>Expiry:</b> write off expired goods, and put items close to expiry on offer.
+</li>
+</ol>
+<h3>5.2 Receiving goods from a supplier</h3>
+<ol>
+<li>Suppliers &amp; purchases → <b>🧾 New purchase invoice</b> → choose the supplier.
+</li>
+<li>Scan each item's barcode (or the carton barcode to buy by the carton).
+</li>
+<li>Adjust the quantity, unit cost and sale price, and type the <b>expiry date</b> (e.g. 2027-03-31) for food items.
+</li>
+<li>If you are VAT-registered: "Of which VAT" → type it from the supplier's invoice or "Calculate at the VAT rate".
+</li>
+<li>"Pay the full amount" or type what you pay now; the rest becomes a debt to the supplier.
+</li>
+<li><b>Save invoice</b>: stock increases and costs update automatically.
+</li>
+</ol>
+<h3>5.3 Returning goods to a supplier</h3>
+<p>Suppliers → choose the supplier → <b>↩ Return to supplier</b> → scan the items → quantity and agreed price (excluding VAT) → reason → save. It is deducted from stock and from the supplier's account. If VAT is enabled, a <b>"Supplier refunds the input VAT on it"</b> tick appears: leave it on if the purchase invoice included VAT, so the supplier is credited with the price plus VAT and input VAT goes down in the VAT return.</p>
+<h3>5.4 Smart reordering (instead of walking the shelves with pen and paper)</h3>
+<p><b>The idea:</b> the program knows how much of each item you sell per day, so it works out what to order from each supplier and how much, instead of guessing. Three steps at the top explain it: <b>📈 measures sales speed → 🧮 suggests the quantity → 📱 you send it to the supplier.</b></p>
+<ol>
+<li>🧠 Smart reordering → the sentence: "Base it on sales from the last <b>30 days</b>, and order enough for <b>14 days</b>" → <b>🔄 Calculate order</b>.
+</li>
+<li>Four cards appear: <b>🚨 Urgent</b> (out of stock or running out within 3 days), <b>📦 Items to order</b>, <b>💰 Estimated order value</b>, and <b>🚚 Suppliers</b>.
+</li>
+<li>The table is sorted by urgency: red row = out or running out within 3 days, yellow = within a week, white = normal. For each item: in stock, daily sales, days it lasts, and the suggested quantity <b>rounded to cartons</b>.
+</li>
+<li><b>Edit a quantity</b> by double-clicking its cell if you want (a supplier offer, for example), and remove what you don't need.
+</li>
+<li>Choose the supplier → <b>📱 Send the order to the supplier (WhatsApp)</b> — the message is ready with items and quantities.
+</li>
+<li>When the goods arrive: <b>🧾 Convert to purchase invoice</b> — items and quantities are filled in; adjust prices and save.
+</li>
+</ol>
+<h3>5.5 Inventory and stock counts</h3>
+<ul>
+<li><b>📋 Stock count:</b> type the real quantity on the shelf; the difference is recorded automatically (less = loss). You can also count from a phone (part 6).
+</li>
+<li><b>± Adjust quantity:</b> for damage, gifts or own use. Any decrease without an invoice counts as a loss in the profit report, and any increase as a gain. The exception is "Goods received" (goods that arrived without a purchase invoice); it's always better to record goods with a purchase invoice.
+</li>
+<li><b>Changing the cost in the product card:</b> revalues the quantity in stock, and the difference shows as profit or loss in the reports.
+</li>
+<li><b>Deleting an item that still has stock:</b> the remaining quantity is written off as a loss. If the goods really exist, don't delete it; edit its details instead.
+</li>
+<li><b>📜 Item movements:</b> everything that came in and went out, and who did it.
+</li>
+<li><b>🏷 Print labels:</b> price labels with barcodes.
+</li>
+<li><b>🏷 Labels waiting to print (never forget a label):</b> any item whose price changes — by editing it, by the bulk price update or from a purchase invoice — joins the <b>label queue</b> automatically, and the count shows on the button. Click it → labels print for those items only → each item leaves the queue once printed. If an old label stays on the shelf for more than two days, the <b>Smart advisor</b> warns you and the <b>financial audit</b> records it (the shelf price differs from the till price).
+</li>
+<li><b>Low stock only:</b> the list of items at their minimum.
+</li>
+</ul>
+<h3>5.6 Prices</h3>
+<ul>
+<li><b>Wholesale price:</b> "Wholesale price" in the product card, and "Price level: wholesale" in the customer card.
+</li>
+<li><b>Bulk price update</b> (after suppliers raise prices): Smart advisor → Bulk price update → "Target margin", e.g. 20% → "Only items with a lower margin" → round to the nearest 0.50 → <b>👁 Preview</b> → <b>✓ Apply</b>. The program then offers to <b>print labels for the items that changed</b> right away; if you postpone, they wait in the label queue.
+</li>
+<li><b>Raised a price and a customer returns an item bought before the increase?</b> They're refunded <b>the price on their original invoice</b>, not the new one, and the stock returns at its original cost. Neither the customer nor the shop gains or loses from the price change.
+</li>
+<li><b>Changing a price at the till (F10):</b> each line keeps <b>the original price</b>, <b>the price it was sold at</b> and the cashier's name. In the books, revenue is recorded at the actual price (which is correct), and the difference appears in the <b>financial audit</b> as a management discount: "Manual price reductions at the till" with its total, its share of sales and the cashiers ranked, and "Sold above the original price" if a customer was overcharged. Every change is also in the activity log.
+</li>
+<li><b>🏷 Pricing calculator:</b> next to "Sale price" in the product card press <b>🏷 Pricing</b>: enter the unit cost (or carton cost ÷ pieces) and the target profit (% on cost or % of the sale price), pick the rounding (for example up to the nearest 0.25) and you get the price incl. VAT and the unit profit; then <b>✓ Use this price</b>. Or type a price to see your profit. In a purchase invoice: select the line ← <b>🏷 Price line</b>.
+</li>
+<li><b>Math inside fields:</b> in any amount field type <code>24*1.25</code>, <code>100+16%</code> or <code>250-10%</code> then Enter. The full calculator is the <b>🧮</b> button at the top or <b>Ctrl+=</b>: calculate, then <b>⤵ Insert into field</b> puts the result into the last field you were in.
+</li>
+<li><b>ABC analysis:</b> never let A items (80% of your sales) run out. Reduce quantities of C items.
+</li>
+<li><b>Bought together:</b> place the two items side by side or put them on a joint offer.
+</li>
+</ul>
+<h3>5.7 Debts</h3>
+<ul>
+<li><b>Customers &amp; debts:</b> a statement for each customer, <b>🖨 Print statement</b>, <b>💬 WhatsApp reminder</b>, and <b>📣 Remind all debtors</b> (one message to each debtor in one click).
+</li>
+<li><b>Credit limit:</b> in the customer card. The program blocks going over it without manager approval.
+</li>
+<li><b>⚖ Adjustment:</b> forgiving a small amount or a correction (shown as an adjustment in the reports).
+</li>
+<li><b>📅 Installments:</b> split a customer's debt into payments (monthly, every two weeks or weekly) and set the first due date. Payments are received with "Receive payment" as usual and are applied to the oldest installment first, so you see what's paid, overdue and upcoming. <b>💬 Installment reminder</b> sends the customer the amount and due date, and the smart advisor alerts you to late payers. Print the schedule for the customer to sign.
+</li>
+</ul>
+<h3>5.8 Cheques</h3>
+<ul>
+<li><b>Receiving a cheque from a customer:</b> 🏦 Cheques → 📥 → customer, amount, number, bank, due date.
+</li>
+<li><b>Giving a cheque to a supplier:</b> 📤 → supplier... (or from the suppliers screen → "📤 Post-dated cheque").
+</li>
+<li><b>On the due date:</b> select the cheque → <b>✓ Cleared in the bank</b>, or <b>↩ Bounced</b> (the debt comes back automatically).
+</li>
+<li>Colors: 🟥 past due and not updated, 🟧 within a week.
+</li>
+</ul>
+<h3>5.9 Offers and loyalty points</h3>
+<ul>
+<li>🎁 Offers &amp; loyalty → <b>+ New offer</b>:
+<ul>
+<li><b>Buy and get free:</b> the item, buy 2, get 1.
+</li>
+<li><b>Quantity for a fixed price:</b> 3 pieces for 10.
+</li>
+<li><b>Percentage off:</b> on an item or a <b>whole category</b> (e.g. detergents 15%).
+</li>
+<li>Start and end dates; the offer stops by itself.
+</li>
+</ul>
+</li>
+<li><b>Loyalty points:</b> Settings → Loyalty points &amp; owner dashboard. Recommended example: 1 point per 1 unit of currency, a point = 0.05, minimum redemption 100 → the customer gets 5% back.
+<ul>
+<li>In the accounts, points customers haven't redeemed are <b>a liability of the shop</b> shown on the balance sheet ("Loyalty points owed to customers"), and their cost appears in the profit report when earned, not when redeemed. This way profit never looks higher than it really is.
+</li>
+</ul>
+</li>
+</ul>
+<h3>5.10 E-payments (wallets and banking apps)</h3>
+<p><b>Setup (once):</b> Settings → <b>E-payments</b> → <b>✨ Suggestions for my country</b> (or "+ Add payment method"):</p>
+<ul>
+<li>The <b>name</b> customers know it by, and the <b>account number, phone or alias</b> they transfer to.
+</li>
+<li><b>Money arrives in:</b> "Wallet balance" for mobile wallets, or "Bank account directly" for instant bank transfers.
+</li>
+<li><b>QR code text (optional):</b> if the shop has an official QR code in the wallet app, put its text here to show it to customers. Without it, a code with the account number is shown.
+</li>
+<li>It's best to enable "Cashier must enter the transaction number".
+</li>
+</ul>
+<p><b>Reconciliation (weekly):</b> Reports → <b>E-payments</b>: the total of each method (sales + debt payments). Select a method to see its transactions with each transaction number, and match them with the wallet or bank statement. Any transaction in the program that's not on the statement = a fake confirmation or a mistake; check it immediately.</p>
+<p><b>Moving wallet balance to the bank:</b> Accounting → <b>➕ Financial transaction</b> → "Transfer e-wallet balance to the bank" with the amount that reached the bank, then "Fee deducted by the e-wallet" with the difference. The "E-wallets" balance on the balance sheet should equal your balance in the app.</p>
+<blockquote><p><b>Important for cashiers:</b> don't hand over the goods before you see the correct payment confirmation on the customer's phone. Screenshots can be faked; the weekly reconciliation catches that.</p></blockquote>
+<h3>5.11 Expenses</h3>
+<p>💸 Expenses → type (electricity, rent...) → amount → "From the drawer" if paid from the till; untick it if the owner paid from their pocket or from the bank. An expense paid from the drawer of a closed shift can't be deleted (its cash count is done). If it was a mistake, record a "Cash deposit" of the same amount in the current shift.</p>
+<h3>5.11.1 Employees and payroll</h3>
+<p>👔 <b>Employees &amp; payroll</b> → <b>+ New employee</b> (name, job, monthly salary).</p>
+<ul>
+<li><b>💵 Advance:</b> money the employee takes in advance. It isn't an expense but a debt deducted from their salary.
+</li>
+<li><b>🧾 Pay salary:</b> choose the month → base + bonus − deductions (absence, lateness) → the program suggests deducting advances → net paid → in cash from the drawer or from the bank. A <b>payslip</b> prints for the employee to sign.
+</li>
+<li>The salary appears in expenses and the profit report, and what is paid from the drawer is deducted from the shift's expected cash.
+</li>
+<li><b>An old payslip:</b> select the employee → <b>🖨 Payslip</b> → pick the month from the list. Or in the "History" table at the bottom: select the month's row → <b>🖨 Payslip for selected month</b>.
+</li>
+<li><b>📄 Print employee statement:</b> all their salaries, advances and what was deducted, with dates and amounts.
+</li>
+<li><b>Former employees:</b> make an employee who left "inactive" with <b>✏ Edit</b> (never deleted, so the record is kept). To see them: tick <b>"Show former employees"</b>.
+</li>
+</ul>
+<h3>5.12 Reports (what to read and when)</h3>
+<div class="table"><table><tr><th>Report</th><th>When</th><th>What to look for</th></tr><tr><td>Profit &amp; Loss</td><td>Weekly and monthly</td><td>Net profit, margin (15–25% is good for a grocery)</td></tr><tr><td><b>Period summary</b> (daily/weekly/monthly/yearly)</td><td>End of each week, month and year</td><td>Compare periods: where profit went up or down, and how payment methods change. Choose "Last 3 years" and "Yearly" to see the shop grow</td></tr><tr><td>E-payments</td><td>Weekly</td><td>Reconcile each wallet and banking app with its statement</td></tr><tr><td>Best sellers (by profit)</td><td>Monthly</td><td>What really earns you money; never let it run out</td></tr><tr><td>Slow-moving items</td><td>Monthly</td><td>Frozen money: put them on offer or return them to the supplier</td></tr><tr><td>Peak hours</td><td>When planning staff hours</td><td>When you need an extra cashier</td></tr><tr><td>By cashier</td><td>Weekly</td><td>Too many discounts from one cashier</td></tr><tr><td>VAT</td><td>When filing the return</td><td>VAT on sales − VAT on purchases = net payable</td></tr><tr><td>Activity log</td><td>When in doubt</td><td>Who changed a price, who opened the drawer, who deleted an item</td></tr></table></div>
+<h3>5.13 Accounting and the balance sheet (for owners and accountants)</h3>
+<ul>
+<li><b>Balance sheet:</b> what the shop owns, what it owes, and the owner's equity.
+</li>
+<li><b>Income statement:</b> the real profit for the period.
+</li>
+<li><b>Trial balance:</b> give it to your auditor (📤 Export or 🖨 Print). Double-click any account to see its statement.
+</li>
+<li><b>Journal and account statement:</b> sales appear as one entry per day (clearer). Tick "Show every invoice" to see each invoice.
+</li>
+<li><b>➕ Financial transaction:</b> capital, bank deposit, bank withdrawal, buying equipment, a loan and loan repayment, <b>offsetting input VAT and paying VAT due</b>, <b>depreciation of equipment and furniture</b>, and <b>bank fees</b>.
+</li>
+<li><b>Manual entries</b> are for the accountant only, and an entry can be voided (it stays visible as voided).
+</li>
+<li><b>Cash flow:</b> where cash came from and where it went (operations, assets, owner and loans); it always reconciles with the cash drawer, bank and wallets.
+</li>
+<li><b>Fixed assets:</b> <b>+ Fixed asset</b> → name, cost, purchase date, useful life (furniture 5–10 years, devices 3–5, fridges 5–8) and how it was paid. <b>Depreciation is calculated monthly and posted automatically.</b> If the asset was already recorded with a "Buy equipment" transaction, choose "Already in the books". When you sell it: <b>💲 Sell/dispose</b> and the gain or loss is calculated for you.
+</li>
+<li><b>Comparative income statement:</b> next to each line, <b>Previous period</b> and <b>Change %</b> columns (the previous period is chosen automatically: last month if you picked a month, last year if you picked a year).
+</li>
+<li><b>Financial ratios:</b> 12 ratios as a financial analyst reads them, each with a colour and a plain explanation: gross and net margin, expense ratio, <b>liquidity</b> (can what you have pay what you owe?), <b>days stock stays on the shelf</b>, <b>days to collect debts</b> and <b>days to pay suppliers</b>, the <b>cash cycle</b>, the <b>break-even point</b> (how much you must sell monthly to cover expenses), <b>months of cash runway</b>, and return on equity. 🟢 good • 🟡 watch • 🔴 needs action.
+</li>
+<li><b>Bank reconciliation (monthly):</b> enter the <b>bank statement</b> balance on a date → <b>⚖ Reconcile</b>. The program deducts amounts <b>in transit</b> (card and transfer sales from the last two days the bank hasn't settled yet) from the book balance and shows the difference. A small negative difference is usually bank fees: <b>🏦 Record the difference as bank fees and save</b> posts the entry automatically. Every reconciliation is kept in the history below, and the auditor reminds you if 45 days pass without one.
+</li>
+<li><b>✅ Close month</b> (at the start of each month): choose the month → <b>🔎 Audit and close</b>. The program audits the whole month, opens the <b>closing pack</b> to print (income statement, balance sheet, cash flow, VAT return, trial balance, the auditor's opinion), then <b>locks the books</b> up to the end of the month: no entry or expense dated inside it can be added or deleted. If there are critical findings it asks before closing. To reopen the last closed month for a correction: <b>🔓 Reopen last closed month</b> (recorded in the activity log).
+</li>
+<li><b>🖨 Printing never blocks your work:</b> printing any table in Accounting and Reports is prepared <b>in the background</b> with a slim progress bar at the bottom of the window ("Preparing the journal… page 40 of 296") while you keep selling or working. When it's done: <b>📄 Open</b> (in a PDF viewer), <b>🖨 Print</b> (choose the printer), <b>💾 Save as</b>, or <b>Cancel</b> while it's preparing. <b>The journal prints in full for the chosen period</b> (a whole year, about 300 pages, in seconds), with the shop header, logo and page numbers.
+</li>
+</ul>
+<blockquote><p>Read "Accounting Made Simple" to understand the terms in plain language.</p></blockquote>
+<h3>5.13.1 The financial audit (instead of an outside auditor)</h3>
+<p>🔎 <b>Financial audit</b> → choose the period (e.g. "This year" or "This month") → <b>▶ Start audit</b>.</p>
+<ul>
+<li>In two seconds the program checks every transaction and gives you an <b>opinion</b> (clean / qualified / adverse) and a <b>score</b> out of 100.
+</li>
+<li><b>Findings are ordered by severity:</b> critical → high → medium → low. Click any finding to see the details, examples and the suggested action.
+</li>
+<li>Start with critical and high: for example a cash refund for an invoice paid by card, a transfer number used twice, or missing invoice numbers.
+</li>
+<li><b>🖨 Audit report:</b> a formal report to print or save as PDF, for a partner, the bank or your auditor.
+</li>
+<li><b>When?</b> It runs <b>by itself every day</b> in the background on the last 30 days, and a red "🔎 Daily auditor" button appears at the top if it finds something important. Run it manually after every stock count and before closing the year.
+</li>
+<li><b>47 audit procedures</b>, including the most common retail fraud patterns:
+<ul>
+<li><b>Sale then a cash refund within 30 minutes by the same cashier</b> (a real sale followed by a fake "return" to take the money).
+</li>
+<li><b>Sales outside the shop's usual hours.</b>
+</li>
+<li><b>A sudden jump in purchase cost</b> of more than 30% over the last purchase of the same item (compared per piece even when bought by the carton).
+</li>
+<li><b>Duplicate customers with the same phone number</b> (spreading debt across two accounts to get past the credit limit).
+</li>
+<li><b>Unusual payroll:</b> paid twice for the same month, for a month that hasn't started, or far above the approved salary.
+</li>
+<li><b>Bank reconciliation</b> that is old or has an unresolved difference, and <b>e-invoices</b> that are late or rejected.
+</li>
+<li>Price changes at the till, rounding differences, and stale shelf labels.
+</li>
+</ul>
+</li>
+<li><b>Tamper seal:</b> every invoice and every line of the activity log is sealed with a chained digital fingerprint. If anyone edits or deletes an invoice directly in the data file (outside the program), it shows up as a critical finding with the invoice number.
+</li>
+</ul>
+<blockquote><p>The audit sees everything recorded in the program, but not what was never recorded; physical stock counts and cash counts are still essential.</p></blockquote>
+<h3>5.13.2 Financial oversight 🏛 (visit of a financial inspector or tax auditor)</h3>
+<ol>
+<li><b>Before the visit:</b> 🏛 Financial oversight ← <b>✅ Readiness</b> ← pick the period ← <b>▶ Check readiness</b>. Fix the red ⛔ items first (the action is written next to each), then the yellow ⚠ ones. Print the result if you like.
+</li>
+<li><b>Data file:</b> <b>📦 Inspector file</b> ← the period the inspector asks for ← <b>📦 Prepare inspector file</b> ← choose where to save (a USB stick, for example). It runs in the background while you keep selling. Inside, “00_اقرأني” explains the contents and contains the <b>handover record</b> to sign, with the <b>overall fingerprint</b> to write on it.
+</li>
+<li><b>When they arrive:</b> <b>👤 Inspector accounts</b> ← <b>+ New inspector account</b> ← name, agency and duration (7 days by default) ← <b>Create account</b>. Print the sign-in details and hand them over; the password is shown only once. They sign in on any shop computer and see the books and reports <b>view only</b>, with “Inspector mode: view only” at the top of the window.
+</li>
+<li><b>During and after the visit:</b> <b>📜 Inspector access log</b> shows everything they opened, with the time. <b>⏱ Extend</b> adds 3 days and <b>⛔ Revoke account</b> stops it at once; otherwise it expires on its own.
+</li>
+<li><b>🔍 Verify a previous file:</b> confirms that the inspector file you handed over has not changed (useful if any dispute arises later).
+</li>
+</ol>
+<ul>
+<li>Ask your shop: “am I ready for the inspector?” gives the verdict and what to fix first.
+</li>
+</ul>
+<h3>5.13.3 Shop assistant 🧭 (Max plan; zakat in Pro)</h3>
+<p>From the menu: <b>🧭 Shop assistant</b> — four tabs:</p>
+<p><b>💬 Ask your shop</b> — type your question the way you'd ask your accountant and press Enter:</p>
+<ul>
+<li>"How much did I sell today?" → sales compared with yesterday at the same hour, and the payment mix.
+</li>
+<li>"Profit last month?" • "Compare this month with last month" • "Electricity expenses this year?"
+</li>
+<li>"Who owes me money?" • "How much does Abu Sami owe?" • "Overdue debts" • "How much do we owe suppliers?"
+</li>
+<li>"How much sugar is left?" • "Price of oil?" • "What's running out?" • "Which items are not selling?"
+</li>
+<li>"Busiest hours?" • "My best customers" • "How much cash is in the drawer?" • "What is the shop worth?"
+</li>
+<li>"Forecast next month's sales" • "What should I prepare for Ramadan?" • "How much zakat?" • "Open inventory"
+</li>
+<li>It understands Arabic too, including everyday dialect.
+</li>
+<li>From any screen: type in the <b>✨ Ask your shop</b> box at the top or press <b>Ctrl+K</b>.
+</li>
+</ul>
+<p><b>🔮 Forecast &amp; cash flow</b> — expected sales for the next 30 days, the weekly trend, expected cash day by day (with salaries, cheques and purchases), a warning if cash will run short, and items that will run out.</p>
+<blockquote><p>Use it before agreeing a big payment with a supplier or buying new equipment: you'll know whether cash will be enough.</p></blockquote>
+<p><b>🌙 Seasons &amp; Ramadan</b> — choose the season (Ramadan, the two Eids, back to school, summer): the start date in Hijri and Gregorian, <b>order before</b>, expected sales, and for each item: how much you sold last season and how much it rose, plus the first order for the first 10 days. Order fresh goods in batches during the season.</p>
+<blockquote><p>If the Hijri month starts a day earlier or later in your country, adjust "Hijri calendar correction" (hijri_adjust) in the settings.</p></blockquote>
+<p><b>🕌 Zakat</b> — enter today's price of a gram of 24k gold, choose how to value stock (sale price or cost) and the type of year, then <b>Calculate zakat</b>: you get the zakat base in detail, the nisab, the zakat due, the next zakat date and a printable report.</p>
+<blockquote><p>The calculation comes from the shop's books; if you have business cash outside the program or other debts due, enter them in their fields. For special cases, consult a scholar.</p></blockquote>
+<h3>5.14 Daily summary on WhatsApp</h3>
+<p>Settings → Loyalty points &amp; owner dashboard → "Owner's WhatsApp number". Then from the dashboard: <b>📱 Today's summary to owner</b> — a message with today's sales, profit, cash and alerts.</p>
+<h3>5.15 Several tills</h3>
+<ol>
+<li>On the main computer: Settings → This device &amp; network → Network setup → "Main computer". Note the address and pairing code.
+</li>
+<li>On each till: "Secondary point of sale" → the address and pairing code → 🔌 Test connection.
+</li>
+<li>Restart the program on every computer. Each till has its own shift, drawer and printer.
+</li>
+<li>The number of tills allowed depends on your plan.
+</li>
+</ol>
+<h3>5.15.1 Several branches (a chain)</h3>
+<p>Each branch runs its own copy, and the owner sees all branches in one report:</p>
+<ol>
+<li>In each branch: Settings → Shop details → <b>"Branch name"</b>, and Settings → Backup → <b>"Second copy"</b> to a shared Google Drive folder.
+</li>
+<li>On the owner's computer: Reports → <b>Branches</b> → <b>📁 Branch backups folder</b> → choose the same folder.
+</li>
+<li>For each branch you see: invoices, net sales, gross profit, expenses, net profit, stock value, debts, and a <b>Total</b> row. Choose the period at the top.
+</li>
+</ol>
+<ul>
+<li>No internet in a branch? Send its backup file over WhatsApp or on a USB stick, and add it with <b>📥 Add branch file</b>.
+</li>
+</ul>
+<h3>5.15.2 Notes and reminders 📝</h3>
+<ul>
+<li>The <b>📝</b> button at the top (or Ctrl+Shift+N): <b>+ New note</b> ← title and details ← <b>Remind me at</b> (date and time) ← repeat (daily, weekly, monthly, yearly) ← <b>💾 Save</b>.
+</li>
+<li><b>Shared with all shop staff:</b> everyone who logs in sees it (like "count the fridge every week"). Notes that are not shared are visible only to you.
+</li>
+<li>When a reminder is due a small card appears at the bottom without stopping sales: <b>✓ Done</b> (a repeating reminder moves to its next date) or <b>⏰ In an hour</b>. The number of due reminders shows on the 📝 button.
+</li>
+<li>Ask your shop: "remind me" or "my notes" lists what is due and coming up.
+</li>
+</ul>
+<h3>5.16 Backup (never ignore it)</h3>
+<ul>
+<li>An automatic copy every day and when the program closes.
+</li>
+<li>Settings → Backup → <b>Automatic second copy in a cloud folder</b>: choose a folder inside Google Drive or OneDrive. This is what saves you if the computer breaks or is stolen.
+</li>
+<li>Restore: "♻ Restore selected" (from the main computer only).
+</li>
+<li><b>Updates:</b> when a new version is released a <b>⬆ New version — update</b> button appears at the top, or use ❓ Help ← <b>⬆ Updates</b>. Press <b>⬆ Update now</b>: the file is downloaded and verified, a backup is taken, then it installs and the program reopens within a minute. Finish any open sale first. Update every till the same way.
+</li>
+</ul>
+<h3>5.16.1 Appearance and logo</h3>
+<ul>
+<li><b>🌙 / ☀ at the top:</b> switches between dark and light mode instantly, on the same screen, without losing your cart or your work. In Settings → Shop details → <b>Appearance</b> you can also choose <b>Auto</b> to follow Windows. Each computer keeps its own look.
+</li>
+<li><b>🌐 العربية / English:</b> switches the language instantly; a "Switching…" message appears, then the same screen opens in the other language with your cart as it was.
+</li>
+<li><b>English item names:</b> in the English interface, item and category names are translated automatically ("حليب طازج 1 لتر" → Fresh Milk 1 L). To write a name yourself: edit the item → <b>English name</b>. To write names for all items at once for review: Inventory → <b>🌐 English names</b>. Search works with both names.
+</li>
+<li><b>Shop logo:</b> Settings → Shop details → <b>🖼 Choose logo</b>. It appears at once in the sidebar, on the login screen and the customer display, on the receipt (black and white), A4 reports, statements, payslips, installment schedules, the audit and zakat reports, and in the owner dashboard and the online store. A square PNG with a transparent or white background works best.
+</li>
+</ul>
+<h3>5.17 Settings that suit your shop</h3>
+<div class="table"><table><tr><th>Setting</th><th>Where</th><th>What it does</th></tr><tr><td><b>Simple mode</b></td><td>Settings → Sales &amp; inventory</td><td>Hides accounting, cheques, offers, reordering and the advisor. Untick it whenever you need them; no data is deleted</td></tr><tr><td><b>Touch screen</b></td><td>Settings → Sales &amp; inventory</td><td>Bigger buttons and a number pad (this computer only, after a restart)</td></tr><tr><td><b>Customer display</b></td><td>Settings → Printing &amp; cash drawer</td><td>A second screen showing the customer the items, total, savings and change</td></tr><tr><td><b>Card terminal</b></td><td>Settings → Printing &amp; cash drawer</td><td>"Manual" without a connection (default), "Simulator" for training, "Terminal bridge" after your provider sets up the connection with your bank. Then "💳 Test connection"</td></tr><tr><td><b>E-payments</b></td><td>Settings → E-payments</td><td>The wallets and banking apps you accept (part 5.10)</td></tr><tr><td><b>Tax invoice QR code</b></td><td>Settings → Currency &amp; tax</td><td>Enable it and enter your tax number; it prints on every receipt</td></tr><tr><td><b>Connected e-invoicing</b></td><td>Settings → E-invoicing</td><td>Link your invoices to the tax platform: Fatoora in Saudi Arabia or JoFotara in Jordan (part 5.18)</td></tr><tr><td><b>Round every invoice up</b></td><td>Settings → Sales &amp; inventory</td><td>Makes the <b>⬆ Whole number</b> button active by default on every invoice</td></tr><tr><td><b>Extra currencies</b></td><td>Settings → Currency &amp; tax</td><td>For example <code>USD=3.65,JOD=5.15</code>; a button appears for each currency in the payment window</td></tr><tr><td><b>Language</b></td><td>The <b>🌐 EN / ع</b> button at the top, or Settings → Shop details</td><td>The interface changes instantly without logging in again, stays on the same screen, and an open cart stays as it is</td></tr><tr><td><b>Small screens</b></td><td>Automatic</td><td>On laptops and small screens the menu folds into icons (hover over an icon to see its name), and the point of sale rearranges its buttons so they're always visible</td></tr></table></div>
+<h3>5.18 Connected e-invoicing with the tax platform (optional)</h3>
+<p>For shops registered in <b>Saudi Arabia</b> (Fatoora — phase 2, integration) or <b>Jordan</b> (the national invoicing system, JoFotara). Leave it off if you're not required to use it.</p>
+<p><b>What the program does:</b> every sales invoice and every return (credit note) becomes an <b>official UBL 2.1 e-invoice</b> at the moment of sale, and is sent to the platform <b>in the background</b> every minute. Selling <b>never stops</b>: if the internet is down, invoices wait in the queue and are sent when it's back.</p>
+<p><b>Saudi Arabia — Fatoora:</b></p>
+<ol>
+<li>Settings → <b>E-invoicing</b> → Platform: <b>Saudi Arabia</b>. Environment: start with the <b>developer sandbox</b>.
+</li>
+<li>Fill in: legal name, commercial registration, national address (street, 4-digit building number, district, city, 5-digit postal code). The 15-digit VAT number comes from "Shop details"; enable 15% VAT in "Currency &amp; tax". → <b>💾 Save settings</b>.
+</li>
+<li>In the Fatoora portal (fatoora.zatca.gov.sa) → "Onboard new solution unit" → copy the <b>OTP</b> (the sandbox OTP is <code>123345</code>).
+</li>
+<li><b>🔗 Link this computer with Fatoora</b> → paste the code. The program generates the <b>signing key on this computer</b>, requests the certificate, passes ZATCA's <b>compliance checks</b> (invoice, credit note and debit note), then receives the <b>production certificate</b> — all in under a minute.
+</li>
+<li>When the test succeeds: switch the environment to <b>Production</b>, save, and link again with an OTP from the production portal.
+</li>
+</ol>
+<ul>
+<li>Every invoice is <b>digitally signed</b> and chained: invoice counter (ICV) and previous invoice hash (PIH), so an invoice can't be removed from the middle without it showing.
+</li>
+<li>The receipt prints the <b>phase-2 QR code</b> (seller name, VAT number, time, total, VAT, hash, signature, public key and certificate signature) under the heading "Simplified tax invoice".
+</li>
+<li><b>Rounding up</b> appears in the e-invoice as a payable rounding amount without touching VAT.
+</li>
+</ul>
+<p><b>Jordan — JoFotara:</b></p>
+<ol>
+<li>Register in the national invoicing system → "Link invoicing systems" → get the <b>Client ID</b>, <b>Secret Key</b> and <b>income source sequence number</b>.
+</li>
+<li>Settings → E-invoicing → Platform: <b>Jordan</b> → enter them, choose the invoice type (general sales tax, or income only) → save.
+</li>
+<li>On each sale the program sends the invoice right away before printing (up to 5 seconds) and prints <b>the QR code returned by the system</b> on the receipt. If the system is slow, the receipt prints without it, and the code appears when you reprint after it's sent.
+</li>
+</ol>
+<p><b>Monitoring:</b> the same tab shows ✅ reported, ⏳ waiting, ⛔ rejected. <b>📤 Send pending now</b> sends immediately, <b>📋 E-invoice log</b> shows every document with the platform's message, <b>💾 Save XML</b>, and <b>🔁 Resend</b> after fixing the reason for a rejection. The financial audit warns you if an invoice is more than <b>24 hours</b> late (the legal deadline in Saudi Arabia) or was rejected.</p>
+<blockquote><p><b>Secrets</b> (signing key, certificates, secret key) are stored inside the shop's data file and travel with the backup, and never appear on any screen or report.</p></blockquote>
+<hr>
+<a id="6"></a>
+<h2>6. Mobile: the app, owner dashboard and online store</h2>
+<h3>6.1 The mobile app (Android)</h3>
+<ol>
+<li>On the shop's main computer open ❓ Help → <b>📲 Link your phone</b> (or ask "how do I pair my phone?"). A window opens with two codes:
+<ul>
+<li><b>Download code:</b> scan it with the phone camera to download the Android app. Install it; it asks for no permissions.
+</li>
+<li><b>Pairing code:</b> the shop computer's address on the network.
+</li>
+</ul>
+</li> If it shows "🔴 The phone service is off", click <b>▶ Start the phone service on this computer</b> (once; it keeps running on every start).
+</li>
+<li>The first time, Windows Firewall may ask: choose <b>Allow</b>.
+</li>
+<li>Open the app with the phone on the shop's Wi-Fi: it <b>finds the shop computer automatically</b> and opens directly. (If several shops are on the network it lists them; if none is found, tap <b>📷 Scan pairing QR</b> in the app and scan the "pairing code" from the window.)
+</li>
+<li>Log in once with the same username and password as in the program — <b>you stay signed in</b>, even after the computer or phone restarts (until you sign out, change the password, or 90 days without use).
+</li>
+<li>The app has tabs at the bottom; each employee sees what their permissions allow:
+</li> | Tab | What's in it |
+</li> |---|---|
+</li> | 🏠 <b>Home</b> | Today's cards: sales, invoice count, profit, cash in the drawer, low-stock items, customer debts, open orders. Tap a card to go to its details |
+</li> | 🔍 <b>Items</b> | The 📷 button scans any item's barcode: price, quantity, expiry and wholesale price (every plan). Staff with inventory permission type "Actual quantity on the shelf" → <b>Save count</b> |
+</li> | 📦 <b>Low stock</b> | Items at their minimum, with a suggested order quantity. Tap one to see and count it |
+</li> | 👥 <b>Customers</b> | Debtors from the highest debt down, search by name or phone, a <b>💬 WhatsApp reminder</b> with a ready message, and <b>📞 Call</b> |
+</li> | 🛵 <b>Orders</b> | Open online orders with their items: <b>👨‍🍳 Preparing</b> → <b>✅ Ready</b> (opens WhatsApp with a message to the customer), or cancel. Converting to an invoice is done at the point of sale |
+</li> | ✨ <b>Ask</b> | Ask your shop in your own words (Max plan) |
+</li> Stock counts, low stock and customers are in Plus and above, orders come with the online store (Pro), and pages refresh by themselves every 30 seconds.
+</li>
+<li><b>Offline copy (shop owner only, away from the shop):</b> each time the owner's app connects to the shop it asks: <b>🔄 Sync and save a copy on this phone</b> or <b>🟢 Stay connected</b> (works live as before). Syncing keeps the shop data up to the <b>last close</b> on the phone: every till's last closing (Z report: sales, cash, card, wallets, credit, refunds, drawer in/out, expected, counted and the difference), this month's sales, the last 30 days day by day, every item's price and stock, low stock and customer debts — only what the user's permissions allow. Away from the shop Wi-Fi, the app offers <b>📴 Open offline copy</b>, or use the menu (⋮) → <b>📴 Offline copy</b>. It is view only and clearly shows the time of the last sync. Tick <b>Sync automatically on every connection</b> to skip the question. Signing out deletes the copy from the phone. Staff, including the shop manager, never see sync or the copy: their app works connected only, and if a staff member signs in on a phone holding a copy, it is deleted at once. On iPhone or a browser use <b>📥 Download offline copy</b> on the home tab: one file that opens without a connection.
+</li>
+<li>From the app menu (⋮): <b>🔄 Sync offline copy</b>, <b>Owner dashboard</b>, <b>Store</b>, or change shop.
+</li>
+<li>If the computer's address changes (for example after the router restarts), the app finds it again automatically.
+</li>
+<li>It follows the phone's dark/light mode automatically.
+</li>
+</ol>
+<blockquote><p><b>One time only:</b> if an old version of the app is on the phone and updating shows "App not installed", uninstall the old version and install the new one. Later updates install over it directly.</p></blockquote>
+<blockquote><p><b>Security:</b> the default password (admin) does not work from the phone; change it in the program first. After 5 wrong sign-in attempts, signing in is locked for a short time.</p></blockquote>
+<blockquote><p><b>iPhone:</b> open the address shown under "Owner dashboard" in the settings in Safari, then "Add to Home Screen".</p></blockquote>
+<h3>6.2 Owner dashboard</h3>
+<p>Today's sales and profit, cash in the drawers, debts, alerts, and sales for the last 7 days — on your phone inside the shop. <b>From outside the shop:</b> ask your provider to set up a secure connection (such as the free Tailscale) on the shop computer and your phone.</p>
+<h3>6.3 Online store and orders 🛵</h3>
+<ol>
+<li>Settings → <b>Online store</b> → enable the store, delivery, its fee and the minimum order.
+</li>
+<li>The <b>🛵 Online orders</b> screen shows the store link: share it with customers (WhatsApp, a QR code on the shop door, Facebook).
+</li>
+<li>When an order arrives, a number appears on the menu button with a sound alert:
+</li> <b>👨‍🍳 Preparing</b> → <b>✅ Ready</b> → <b>📱 Notify customer</b> → on pickup <b>🧾 Convert to invoice</b>.
+</li>
+<li>The delivery fee is added to the invoice as a "Delivery fee" line (a service with no stock), so it counts in sales and profit.
+</li>
+</ol>
+<hr>
+<a id="7"></a>
+<h2>7. Hands-on exercises (on the training copy)</h2>
+<p>Do them in order. After each exercise, check the expected result.</p>
+<div class="table"><table><tr><th>#</th><th>Exercise</th><th>Expected result</th></tr><tr><td>1</td><td>Log in as <code>cashier</code>, open a shift with 200, sell milk ×2 in cash and take 20</td><td>The change appears and the receipt prints (or previews)</td></tr><tr><td>2</td><td>Scan <code>3*6223000000011</code> (tea biscuits)</td><td>The "buy 2 get 1 free" discount appears automatically</td></tr><tr><td>3</td><td>Scan <code>5449000000996</code></td><td>"Cola (carton)" is added and 6 pieces are deducted from stock</td></tr><tr><td>4</td><td>Scan <code>7290000001028</code> (labneh)</td><td>A red warning: expired batch</td></tr><tr><td>5</td><td>Choose "Abu Ahmad" (F4) and sell on credit</td><td>His debt goes up in the customers screen</td></tr><tr><td>6</td><td>Give a 30% discount (F9) as cashier</td><td>Manager approval is requested (admin/admin)</td></tr><tr><td>7</td><td>In settings set the card terminal to "Simulator". In the payment window type cash 0.13 less than the total, then "💳 Pay by card on the terminal"; then set cash to 0 and try again</td><td>The first is declined with the bank's message (the simulator declines any amount ending in .13), the second is approved and its code prints on the receipt</td></tr><tr><td>8</td><td>Pay one invoice with <b>📲 PalPay</b> and type a transaction number, and another half in cash and half by "Instant bank transfer"</td><td>The method name and transaction number appear on the receipt</td></tr><tr><td>9</td><td>Return an item from an earlier invoice</td><td>It goes back to stock and the drawer goes down</td></tr><tr><td>10</td><td>Close the shift with 5 less than expected</td><td>"Shortage 5" appears in the shift report</td></tr><tr><td>11</td><td>As admin: a purchase invoice for two cartons of milk with an expiry date</td><td>Stock goes up by 24 and the batch appears in expiry</td></tr><tr><td>12</td><td>Return 4 labneh to "Al-Junaidi Company"</td><td>The supplier's account and stock go down</td></tr><tr><td>13</td><td>🧠 Smart reordering → Calculate → choose a supplier → WhatsApp</td><td>A ready order message</td></tr><tr><td>14</td><td>🏦 Cheques: click "Cleared" on Abu Khalil's cheque</td><td>It moves from "Cheques under collection" to "Bank" on the balance sheet</td></tr><tr><td>15</td><td>Open the balance sheet</td><td>✓ Balanced: assets = liabilities + equity</td></tr><tr><td>16</td><td>🤖 Smart advisor → read the first recommendation and click its link</td><td>You go to the right screen</td></tr><tr><td>17</td><td>Choose the customer "Neighborhood Grocery (wholesale)" in the point of sale and scan basmati rice</td><td>The price switches to the wholesale price</td></tr><tr><td>18</td><td>Customers → import credit book → save an empty template, add two customers with debts, and import it</td><td>The two customers appear with their debts</td></tr><tr><td>19</td><td>Turn "Simple mode" on, then off</td><td>Advanced screens disappear, then come back as before</td></tr><tr><td>20</td><td>Pair the mobile app by scanning the QR code and count an item</td><td>The quantity changes and the difference appears in item movements</td></tr><tr><td>21</td><td>Enable the store, order two items from a phone, then convert the order to an invoice</td><td>The order is "Completed" and linked to the invoice</td></tr><tr><td>22</td><td>Reports → E-payments → This month → choose PalPay</td><td>Its transactions with each transaction number, for reconciliation</td></tr><tr><td>23</td><td>Reports → Period summary → "Last 3 years" → Yearly, then Monthly</td><td>Sales growth year after year, and the Ramadan and summer peaks</td></tr><tr><td>24</td><td>Accounting → Financial transaction → "Transfer e-wallet balance to the bank"</td><td>The wallets balance goes down and the bank goes up on the balance sheet</td></tr><tr><td>25</td><td>🧭 Shop assistant → Ask your shop: "profit last month", then "what should I prepare for Ramadan?"</td><td>The answer with figures, a comparison and a table; the Ramadan plan with order quantities</td></tr><tr><td>26</td><td>Click 🌙 at the top, then ☀</td><td>The whole program switches to dark and back, on the same screen, in under a second</td></tr><tr><td>27</td><td>Sell two items whose total has decimals, and click <b>⬆ Whole number</b> before paying</td><td>The total becomes a whole number, a "Rounding" line prints, and the difference goes to "Invoice rounding differences"</td></tr><tr><td>28</td><td>Change an item's price, then return it from an old invoice</td><td>It's refunded at the old invoice price, and the item is in <b>🏷 Labels waiting to print</b></td></tr><tr><td>29</td><td>Accounting → <b>Financial ratios</b>, then <b>Bank reconciliation</b> with a balance 5 lower</td><td>12 ratios with their colours; the reconciliation shows a difference of 5 and offers to record it as bank fees</td></tr><tr><td>30</td><td>Employees &amp; payroll → "Show former employees" → select Khaled → <b>🖨 Payslip</b></td><td>A list of all his months, and the payslip for the one you pick</td></tr><tr><td>31</td><td>Reports → <b>Branches</b></td><td>Hebron, Ramallah and Nablus with the total</td></tr><tr><td>32</td><td>On the phone: the <b>🛵 Orders</b> tab → "Ready" on an order</td><td>Its status changes in the program immediately and WhatsApp opens with the customer's message</td></tr></table></div>
+<hr>
+<a id="8"></a>
+<h2>8. FAQ and troubleshooting</h2>
+<div class="table"><table><tr><th>Problem</th><th>Solution</th></tr><tr><td>The barcode isn't read</td><td>Make sure the cursor is in the search box (Esc brings it back). Try the scanner in Notepad: if nothing is typed, the problem is the scanner</td></tr><tr><td>"Not enough quantity in stock"</td><td>The item wasn't entered with a purchase invoice, or the count is wrong. Enter the quantity, or (carefully) enable "Allow selling when out of stock"</td></tr><tr><td>The printer doesn't print</td><td>Settings → Printing → choose the right printer and paper width → preview a test receipt. Make sure the printer is installed in Windows</td></tr><tr><td>The drawer doesn't open</td><td>Settings → Printing &amp; cash drawer → connection type (usually through the printer) → "💰 Test drawer"</td></tr><tr><td>The customer says "I transferred" and it doesn't show in the shop's app</td><td>Don't hand over the goods. Ask them to open their app in front of you and show the transaction with your shop's name and its number</td></tr><tr><td>Card terminal "can't connect"</td><td>Settings → Printing &amp; cash drawer → "💳 Test connection". If it continues: pay the manual way and contact your provider</td></tr><tr><td>Repeated cash shortages</td><td>Activity log: manual drawer openings, cash refunds, discounts; make sure withdrawals are recorded with "Cash withdrawal"</td></tr><tr><td>A secondary till "can't connect"</td><td>Is the main computer running? On the same network? Did the firewall allow the program? Has the main computer's address changed?</td></tr><tr><td>The mobile app "can't reach the shop computer"</td><td>Is the phone on the shop's Wi-Fi? Is the program running on the main computer? Tap "Retry" to search for it automatically, or scan the pairing code again</td></tr><tr><td>The phone says "Change the default password"</td><td>Sign in to the program on the computer and change the admin password, then use it on the phone</td></tr><tr><td>"Too many failed sign-in attempts"</td><td>Wait for the time shown (starting at 30 seconds), then enter the correct password</td></tr><tr><td>"Maximum number of licensed devices reached"</td><td>Your plan allows fewer tills; ask your provider to upgrade</td></tr><tr><td>A feature shows a 🔒 lock</td><td>It isn't in your current plan. Click <b>💎 Compare plans &amp; upgrade</b> to see which plan includes it; your data and selling are not affected</td></tr><tr><td>"Activation key is for another device"</td><td>The key was issued for a different computer. Send your provider this device's code for a new key</td></tr><tr><td>"Invalid activation key format"</td><td>Copy the key <b>completely</b>, from <code>SA1.</code> to the last character, with nothing added or missing</td></tr><tr><td>Forgot the administrator password</td><td>Login screen → <b>"Forgot password?"</b> → send the device code to your provider on WhatsApp → type the code you receive and a new password. No data is deleted</td></tr><tr><td>Profit in "Reports" differs from what you expected</td><td>Check unrecorded expenses, damaged stock, and item costs (a zero cost inflates profit!)</td></tr><tr><td>The balance sheet shows a difference between physical and book inventory</td><td>Caused by selling with negative stock or editing costs manually. Count the items with negative quantities</td></tr><tr><td>"Owner's account" is a large number</td><td>Normal: it's the total the owner took from the drawers. It isn't a loss</td></tr><tr><td>Where is the phone pairing code?</td><td>❓ Help → <b>📲 Link your phone</b></td></tr><tr><td>An e-invoice is "Rejected"</td><td>Settings → E-invoicing → 📋 Log: read the platform's message (usually business details: VAT number or address), fix and save, then <b>🔁 Resend</b></td></tr><tr><td>"Waiting for the device to be linked with Fatoora"</td><td>Linking isn't complete: 🔗 Link this computer with a new OTP. Invoices saved before linking are signed and sent automatically afterwards</td></tr><tr><td>The JoFotara QR code doesn't print</td><td>The system didn't respond within 5 seconds (internet). The invoice was sent later: reprint it from the invoice log and the code appears</td></tr><tr><td>The computer broke or was stolen</td><td>Install the program on a new computer, restore the latest copy from the Google Drive folder, then send the new device code to your provider to activate it</td></tr></table></div>
+</article></div>
+<footer>© الحسن للبرمجيات والإعلان — Al-Hassan Software &amp; Advertising</footer>
+</body>
+</html>

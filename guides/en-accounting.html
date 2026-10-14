@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232563EB%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22%3E🏪%3C/text%3E%3C/svg%3E">
+<title>Accounting made simple — المحاسبة ونقاط البيع</title>
+<style>
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_400Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_700Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root { --bg: #f1f5f9; --surface: #ffffff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0; --blue: #2563eb;
+  --blue-soft: #dbeafe; --code: #f8fafc; --shadow: 0 1px 2px rgba(15,23,42,.05), 0 10px 30px rgba(15,23,42,.07); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b1220; --surface: #131c2e; --text: #e2e8f0;
+  --muted: #94a3b8; --line: #23324a; --blue: #60a5fa; --blue-soft: #172554; --code: #0f172a; --shadow: none; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 "Plex Arabic", "Segoe UI", Tahoma, system-ui, sans-serif; }
+a { color: var(--blue); }
+.top { position: sticky; top: 0; z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; }
+.logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.links { margin-inline-start: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.links a { text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 15px; }
+.links a.dl { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 700; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 28px clamp(16px, 4vw, 44px); margin: 24px auto 40px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.35; margin-top: 0; }
+h2 { margin-top: 1.8em; padding-top: .4em; border-top: 1px solid var(--line); }
+h3 { margin-top: 1.4em; }
+img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+blockquote { margin: 1em 0; padding: 10px 16px; border-inline-start: 4px solid var(--blue); background: var(--blue-soft); border-radius: 10px; }
+code { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; font-size: .92em; }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow-x: auto; direction: ltr; }
+pre code { border: 0; padding: 0; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: start; vertical-align: top; }
+th { background: var(--blue-soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+hr + h2, hr + a + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.cards a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); font-weight: 700; }
+.cards a:hover { border-color: var(--blue); background: var(--blue-soft); }
+footer { color: var(--muted); text-align: center; padding: 0 16px 32px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <a class="brand" href="../en.html"><span class="logo">🏪</span><span>المحاسبة ونقاط البيع</span></a>
+  <span class="links"><a href="index.html">📚 All guides</a><a href="../en.html">Home</a><a class="dl" href="../en.html#download">⬇ Download</a></span>
+</div></div>
+<div class="wrap"><article>
+<h1>Accounting Made Simple — for non-accountants</h1>
+<blockquote><p>For shop owners (and anyone who sells or supports the program). No accounting background needed. Goal: understand what the program shows you, explain it with confidence, and answer common questions.</p></blockquote>
+<hr>
+<h2>Lesson 1: five words that explain any shop</h2>
+<p>Imagine a shop called "Hope Grocery". Everything in it belongs to one of five boxes:</p>
+<div class="table"><table><tr><th>Box</th><th>In shop language</th><th>Examples</th><th>Account number in the program starts with</th></tr><tr><td><b>Assets</b></td><td>What the shop owns</td><td>Cash in the drawer, bank balance, stock on the shelves, customer debts, fridges</td><td><b>1</b></td></tr><tr><td><b>Liabilities</b></td><td>What the shop owes others</td><td>What we owe suppliers, cheques we gave that haven't cleared, a loan, VAT payable, loyalty points customers haven't redeemed yet</td><td><b>2</b></td></tr><tr><td><b>Equity</b></td><td>The owner's share</td><td>Capital the owner put in + accumulated profits − what they took out</td><td><b>3</b></td></tr><tr><td><b>Revenue</b></td><td>What comes in from selling</td><td>Sales</td><td><b>4</b></td></tr><tr><td><b>Expenses</b></td><td>What it costs to run the shop</td><td>Cost of goods sold, rent, electricity, salaries, spoiled stock</td><td><b>5</b> and <b>6</b></td></tr></table></div>
+<h3>The golden rule (the balance sheet equation)</h3>
+<pre><code>What the shop owns  =  What it owes others  +  The owner&#x27;s share
+      Assets        =      Liabilities      +       Equity</code></pre>
+<p><b>Example:</b> the shop has stock worth 50,000, cash 3,000 and customer debts 2,000 → assets 55,000. It owes suppliers 5,000 → liabilities 5,000. So <b>the owner's share = 50,000</b>. That is "what my shop is worth".</p>
+<blockquote><p>In the program: <b>Accounting &amp; balance sheet → Balance sheet</b> shows these three figures at the top of the screen.</p></blockquote>
+<hr>
+<h2>Lesson 2: profit — gross and net</h2>
+<pre><code>Sales
+− Returns
+= Net sales
+− Cost of goods sold          (what we paid for what we sold)
+= Gross profit                (profit on the goods themselves)
+− Expenses (rent, electricity, salaries...)
+− Stock losses (spoiled, expired, theft)
+± Cash drawer shortage or overage
+= Net profit                  (what really ends up in the owner&#x27;s pocket)</code></pre>
+<p><b>One-day example:</b> we sold 1,000. What we sold cost us 780 → gross profit 220 (22% margin). We paid 60 for electricity and threw away expired labneh that cost 20 → net profit 140.</p>
+<p><b>Common mistakes shop owners make (the program avoids them):</b></p>
+<ol>
+<li>"I sold 1,000 today, so I made 1,000" → wrong; profit comes after the cost of the goods.
+</li>
+<li>"The drawer has 500 more than this morning, so my profit is 500" → wrong; maybe you didn't pay a supplier, or a customer paid an old debt.
+</li>
+<li>Forgetting discounts, returns and spoiled stock → profits that don't exist.
+</li>
+</ol>
+<blockquote><p>In the program: <b>Reports → Profit &amp; Loss</b>, or <b>Accounting → Income statement</b>. Both give the same net profit.</p></blockquote>
+<h3>Margin vs. markup (a very common question)</h3>
+<ul>
+<li>You bought at 8 and sold at 10.
+</li>
+<li><b>Markup</b> = 2 ÷ 8 = 25%.
+</li>
+<li><b>Margin</b> = 2 ÷ 10 = 20%. ← this is what the program shows as "margin".
+</li>
+</ul>
+<hr>
+<h2>Lesson 3: cost of goods and the "weighted average"</h2>
+<p>You bought 10 cans of tuna at 3, then 10 more at 4 (the price went up). What does one can cost? <b>Weighted average</b> = (10×3 + 10×4) ÷ 20 = <b>3.5</b>. The program updates each item's cost this way with every purchase invoice, so profits stay accurate even when prices change.</p>
+<hr>
+<h2>Lesson 4: cash is not profit — drawer, bank and owner's account</h2>
+<ul>
+<li><b>Cash (1110):</b> the money actually in the cashier drawers.
+</li>
+<li><b>Bank (1120):</b> card sales, transfers and cleared cheques.
+</li>
+<li><b>Owner's current account (3120):</b> any money the owner takes from the drawer for themselves, or pays for the shop from their own pocket (such as rent paid outside the drawer).
+</li>
+</ul>
+<p><b>Why does it matter?</b> An owner who takes money from the drawer every day without recording it starts believing the shop is losing money, or that the cashier is stealing. The program records it automatically:</p>
+<ul>
+<li>A "cash withdrawal" from the cash screen → recorded on the owner's account.
+</li>
+<li>If you close a shift with 1,500 and open the next one with 200 → the program understands the owner took 1,300.
+</li>
+<li>An expense "not from the drawer" → paid by the owner from their own pocket.
+</li>
+</ul>
+<hr>
+<h2>Lesson 5: debts and cheques</h2>
+<ul>
+<li><b>Customer receivables (1210):</b> the total customers owe you ("the credit book"). Credit sales increase it; payments reduce it.
+</li>
+<li><b>Supplier payables (2110):</b> what we owe suppliers. An unpaid purchase invoice increases it; a payment reduces it.
+</li>
+<li><b>Incoming post-dated cheque (1130):</b> a customer gave you a cheque dated later. Their debt goes down <b>immediately</b>, but the money hasn't reached the bank yet. On the due date:
+<ul>
+<li><b>Cleared</b> → the amount moves to the bank.
+</li>
+<li><b>Bounced</b> → the debt goes back on the customer automatically.
+</li>
+</ul>
+</li>
+<li><b>Outgoing post-dated cheque (2120):</b> you gave a supplier a cheque. You owe the supplier less, but it is now a commitment on your bank account until it clears. <b>Watch the "cheques due within a week" alert so your cheque never bounces!</b>
+</li>
+</ul>
+<hr>
+<h2>Lesson 6: double entry — why "debit" and "credit"?</h2>
+<p>Every transaction touches at least two accounts, and the <b>debit</b> side always equals the <b>credit</b> side. An easy rule:</p>
+<ul>
+<li><b>Debit</b> = where the value went (an asset or an expense increased).
+</li>
+<li><b>Credit</b> = where the value came from (a liability, revenue or equity increased, or an asset decreased).
+</li>
+</ul>
+<div class="table"><table><tr><th>Transaction</th><th>Debit (went to)</th><th>Credit (came from)</th></tr><tr><td>Cash sale of 100 (cost 80)</td><td>Cash 100 / Cost of goods 80</td><td>Sales 100 / Inventory 80</td></tr><tr><td>Credit sale to Abu Ahmad, 50</td><td>Customer receivables 50</td><td>Sales 50</td></tr><tr><td>Abu Ahmad paid 50 in cash</td><td>Cash 50</td><td>Customer receivables 50</td></tr><tr><td>Unpaid purchase invoice of 1,000</td><td>Inventory 1,000</td><td>Supplier payables 1,000</td></tr><tr><td>Paid the supplier 400 from the drawer</td><td>Supplier payables 400</td><td>Cash 400</td></tr><tr><td>Electricity 60 from the drawer</td><td>Expenses – electricity 60</td><td>Cash 60</td></tr><tr><td>Threw away expired labneh costing 20</td><td>Stock losses 20</td><td>Inventory 20</td></tr><tr><td>Owner put 20,000 capital in the bank</td><td>Bank 20,000</td><td>Capital 20,000</td></tr></table></div>
+<blockquote><p><b>The program writes all these entries by itself.</b> See them in <b>Accounting → Journal</b>. A manual entry is needed only for things outside buying and selling (capital, a loan, buying a fridge...), and there is a ready "Financial transaction" window: choose the transaction and type the amount.</p></blockquote>
+<hr>
+<h2>Lesson 7: the four accounting reports and the question each one answers</h2>
+<div class="table"><table><tr><th>Report</th><th>The question it answers</th><th>For whom</th></tr><tr><td><b>Income statement</b></td><td>Did I make a profit in this period? How much?</td><td>The owner</td></tr><tr><td><b>Balance sheet</b></td><td>What is my shop worth today? What do I own and what do I owe?</td><td>The owner, the bank when asking for a loan</td></tr><tr><td><b>Trial balance</b></td><td>Do all accounts balance? What is each account's balance?</td><td>The auditor, the tax office</td></tr><tr><td><b>Account statement</b></td><td>Every movement on one account (the bank, for example) with its balance</td><td>The owner and the accountant for reconciliation</td></tr></table></div>
+<blockquote><p><b>Tip:</b> at the end of the year, instead of paying the accountant for days to gather your books, print the trial balance and balance sheet from the program in a minute.</p></blockquote>
+<hr>
+<h2>Lesson 8: VAT (if the shop is registered)</h2>
+<ul>
+<li>If prices <b>include VAT</b> (most common): a price of 116 at 16% → 16 is tax and 100 is revenue.
+</li>
+<li>VAT is not profit; it is money held for the state. So the program takes it out of revenue and puts it in <b>VAT payable (2210)</b>.
+</li>
+<li>VAT on purchases (input VAT) is entered with the purchase invoice from the supplier's invoice. The <b>VAT report</b> subtracts it from VAT on sales and gives you the net amount to pay.
+</li>
+</ul>
+<hr>
+<h2>Lesson 9: stock counts and shortages</h2>
+<ul>
+<li><b>Stock count:</b> count the goods on the shelf and enter the real number. The program calculates the difference:
+<ul>
+<li>Less than expected → a <b>stock loss</b> (deducted from profit).
+</li>
+<li>More than expected → reduces the loss.
+</li>
+</ul>
+</li>
+<li><b>Cash shortage:</b> when closing a shift you count the money; if it is less than expected, the shortage appears in the reports and in "Cash shortage (5130)".
+</li>
+<li><b>Tip:</b> count expensive items (cigarettes, baby formula, oils) weekly, and do a full count every 3–6 months.
+</li>
+</ul>
+<hr>
+<h2>Lesson 10: quick glossary</h2>
+<div class="table"><table><tr><th>Term</th><th>What it means</th></tr><tr><td>Receivables</td><td>Money customers owe us</td></tr><tr><td>Payables</td><td>Money we owe suppliers</td></tr><tr><td>Debit/credit balance</td><td>Assets and expenses normally have a "debit" balance; liabilities, revenue and equity a "credit" balance</td></tr><tr><td>Cost of goods sold</td><td>The purchase price of what we sold</td></tr><tr><td>Gross profit</td><td>Sales − cost of goods</td></tr><tr><td>Net profit</td><td>Gross profit − all expenses and losses</td></tr><tr><td>Working capital</td><td>Current assets (cash, bank, stock, debts) − short-term liabilities</td></tr><tr><td>Owner's account / drawings</td><td>What the owner took from the shop's money</td></tr><tr><td>Opening balances</td><td>What existed before using the program (stock, old debts)</td></tr><tr><td>FEFO</td><td>First expired, first out — sell what expires soonest first</td></tr><tr><td>Slow-moving items</td><td>Stock not sold for a while = frozen money</td></tr><tr><td>Average basket</td><td>The average invoice value; raising it with offers increases sales</td></tr></table></div>
+<hr>
+<h2>Test yourself (answers below)</h2>
+<ol>
+<li>A shop has stock of 30,000 and cash of 2,000, and owes suppliers 7,000. What is the owner's share?
+</li>
+<li>You sold 500, what you sold cost 400, and you paid 30 rent today. What are gross and net profit?
+</li>
+<li>A customer gave you a cheque for 1,000 due in a month. Did your bank balance go up today?
+</li>
+<li>You took 200 from the drawer for household expenses. Is that an expense of the shop?
+</li>
+<li>Purchase price 4, sale price 5. What is the margin?
+</li>
+</ol>
+<p><b>Answers:</b> 1) 25,000. 2) Gross 100, net 70. 3) No; only the customer's debt went down, and the amount sits in "cheques under collection" until it clears. 4) No; it is a drawing on the owner's account and does not reduce the shop's profit. 5) 20%.</p>
+</article></div>
+<footer>© الحسن للبرمجيات والإعلان — Al-Hassan Software &amp; Advertising</footer>
+</body>
+</html>

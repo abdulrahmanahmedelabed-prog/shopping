@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232563EB%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22%3E🏪%3C/text%3E%3C/svg%3E">
+<title>Cashier card — المحاسبة ونقاط البيع</title>
+<style>
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_400Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_700Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root { --bg: #f1f5f9; --surface: #ffffff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0; --blue: #2563eb;
+  --blue-soft: #dbeafe; --code: #f8fafc; --shadow: 0 1px 2px rgba(15,23,42,.05), 0 10px 30px rgba(15,23,42,.07); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b1220; --surface: #131c2e; --text: #e2e8f0;
+  --muted: #94a3b8; --line: #23324a; --blue: #60a5fa; --blue-soft: #172554; --code: #0f172a; --shadow: none; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 "Plex Arabic", "Segoe UI", Tahoma, system-ui, sans-serif; }
+a { color: var(--blue); }
+.top { position: sticky; top: 0; z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; }
+.logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.links { margin-inline-start: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.links a { text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 15px; }
+.links a.dl { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 700; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 28px clamp(16px, 4vw, 44px); margin: 24px auto 40px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.35; margin-top: 0; }
+h2 { margin-top: 1.8em; padding-top: .4em; border-top: 1px solid var(--line); }
+h3 { margin-top: 1.4em; }
+img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+blockquote { margin: 1em 0; padding: 10px 16px; border-inline-start: 4px solid var(--blue); background: var(--blue-soft); border-radius: 10px; }
+code { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; font-size: .92em; }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow-x: auto; direction: ltr; }
+pre code { border: 0; padding: 0; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: start; vertical-align: top; }
+th { background: var(--blue-soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+hr + h2, hr + a + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.cards a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); font-weight: 700; }
+.cards a:hover { border-color: var(--blue); background: var(--blue-soft); }
+footer { color: var(--muted); text-align: center; padding: 0 16px 32px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <a class="brand" href="../en.html"><span class="logo">🏪</span><span>المحاسبة ونقاط البيع</span></a>
+  <span class="links"><a href="index.html">📚 All guides</a><a href="../en.html">Home</a><a class="dl" href="../en.html#download">⬇ Download</a></span>
+</div></div>
+<div class="wrap"><article>
+<h1>🧾 Cashier Card — print it and keep it next to the screen</h1>
+<h2>Start of shift</h2>
+<ol>
+<li>Log in <b>with your own name</b>.  2. Count the change in the drawer.  3. <b>Open shift</b> with that amount.
+</li>
+</ol>
+<h2>Selling keys</h2>
+<div class="table"><table><tr><th>Key</th><th>What it does</th><th>Key</th><th>What it does</th></tr><tr><td><b>Scan</b></td><td>Add an item</td><td><b>F2</b></td><td>Pay</td></tr><tr><td><b>3\*barcode</b></td><td>3 pieces</td><td><b>F12</b></td><td>Exact cash</td></tr><tr><td><b>+ / −</b></td><td>Quantity</td><td><b>F4</b></td><td>Choose customer</td></tr><tr><td><b>Delete</b></td><td>Remove line</td><td><b>F5</b></td><td>Piece ↔ carton</td></tr><tr><td><b>F8</b></td><td>Type quantity</td><td><b>F6 / F7</b></td><td>Hold / recall</td></tr><tr><td><b>F9</b></td><td>Discount</td><td><b>F10</b></td><td>Change price</td></tr><tr><td><b>F11</b></td><td>Reprint last invoice</td><td><b>Esc</b></td><td>Back to search</td></tr><tr><td><b>Enter</b> (empty search)</td><td>Pay</td><td>🔍 <b>Price check</b></td><td>"How much is this?"</td></tr><tr><td><b>⬆ Whole number</b></td><td>No small change</td><td></td><td></td></tr></table></div>
+<h2>Payment</h2>
+<ul>
+<li>Type what the customer gave you → look at the <b>change</b> → <b>Enter</b>.
+</li>
+<li><b>Card</b>: the <b>💳 Pay by card on the terminal</b> button if the terminal is connected; otherwise type the amount in the card field.
+</li>
+<li><b>Wallet / banking app</b>: the <b>📲</b> method button → the customer pays and shows you the confirmation → type the <b>transaction number</b> → <b>✓ Payment received</b>. Don't hand over the goods before you see the confirmation.
+</li>
+<li><b>On credit</b>: choose the customer (F4), then "Credit".
+</li>
+<li>🎁 Offers are applied <b>automatically</b>. Customer points: the <b>🎁 Redeem points</b> button.
+</li>
+</ul>
+<h2>Never ✋</h2>
+<ul>
+<li>❌ Don't sell an item showing <b>⛔ Expired</b>.
+</li>
+<li>❌ Don't take money from or put money in the drawer without a <b>Cash withdrawal / Cash deposit</b>.
+</li>
+<li>❌ Don't share your password, and never work on someone else's account.
+</li>
+</ul>
+<h2>Returns</h2>
+<p>Invoices &amp; returns → invoice number → <b>↩ Return</b> → quantity → cash or against the customer's debt. The refund uses <b>that invoice's price</b>, even if the price has changed.</p>
+<h2>End of shift</h2>
+<p><b>Cash &amp; shifts → 🔒 Close shift</b> → count by denomination → <b>🖨 Print report</b> → hand the cash and the report to the manager.</p>
+<hr>
+<p>Support: Al-Hassan Software &amp; Advertising — WhatsApp +970 59 245 8157</p>
+</article></div>
+<footer>© الحسن للبرمجيات والإعلان — Al-Hassan Software &amp; Advertising</footer>
+</body>
+</html>

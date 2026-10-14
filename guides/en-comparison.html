@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232563EB%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22%3E🏪%3C/text%3E%3C/svg%3E">
+<title>Competitor comparison — المحاسبة ونقاط البيع</title>
+<style>
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_400Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_700Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root { --bg: #f1f5f9; --surface: #ffffff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0; --blue: #2563eb;
+  --blue-soft: #dbeafe; --code: #f8fafc; --shadow: 0 1px 2px rgba(15,23,42,.05), 0 10px 30px rgba(15,23,42,.07); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b1220; --surface: #131c2e; --text: #e2e8f0;
+  --muted: #94a3b8; --line: #23324a; --blue: #60a5fa; --blue-soft: #172554; --code: #0f172a; --shadow: none; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 "Plex Arabic", "Segoe UI", Tahoma, system-ui, sans-serif; }
+a { color: var(--blue); }
+.top { position: sticky; top: 0; z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; }
+.logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.links { margin-inline-start: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.links a { text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 15px; }
+.links a.dl { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 700; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 28px clamp(16px, 4vw, 44px); margin: 24px auto 40px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.35; margin-top: 0; }
+h2 { margin-top: 1.8em; padding-top: .4em; border-top: 1px solid var(--line); }
+h3 { margin-top: 1.4em; }
+img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+blockquote { margin: 1em 0; padding: 10px 16px; border-inline-start: 4px solid var(--blue); background: var(--blue-soft); border-radius: 10px; }
+code { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; font-size: .92em; }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow-x: auto; direction: ltr; }
+pre code { border: 0; padding: 0; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: start; vertical-align: top; }
+th { background: var(--blue-soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+hr + h2, hr + a + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.cards a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); font-weight: 700; }
+.cards a:hover { border-color: var(--blue); background: var(--blue-soft); }
+footer { color: var(--muted); text-align: center; padding: 0 16px 32px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <a class="brand" href="../en.html"><span class="logo">🏪</span><span>المحاسبة ونقاط البيع</span></a>
+  <span class="links"><a href="index.html">📚 All guides</a><a href="../en.html">Home</a><a class="dl" href="../en.html#download">⬇ Download</a></span>
+</div></div>
+<div class="wrap"><article>
+<h1>How We Compare</h1>
+<blockquote><p>An honest comparison with the best-known point-of-sale and accounting products in the Arab world and globally: where we lead, where others lead, and what each one costs. Prices are from official sites and comparison sites as of October 2026 and may change. Dollar figures are approximate, for comparison.</p></blockquote>
+<hr>
+<h2>1. The picture in one line</h2>
+<p><b>We are the only product that combines all of this:</b> a full point of sale that <b>works offline</b> + double-entry accounting and a balance sheet + an <b>automated financial auditor</b> + an <b>assistant you can ask in plain language (including Arabic dialect)</b> + <b>sales and cash-flow forecasting</b> + a <b>Ramadan and Eid planner on the Hijri calendar</b> + a <b>zakat calculator from your books</b> — with a <b>free-forever plan</b> that never stops selling, and data that stays on the shop owner's computer.</p>
+<hr>
+<h2>2. Prices for a shop with one till (ours are yearly in USD; competitors as they advertise monthly)</h2>
+<div class="table"><table><tr><th>Product</th><th>Type</th><th>Cheapest paid plan</th><th>Advanced plan</th><th>Free?</th></tr><tr><td><b>Our program</b></td><td>Desktop + local network, offline</td><td><b>Plus $290/year (≈ $24/mo)</b></td><td>Pro $890/year (≈ $74) • Max $1,730/year (≈ $144)</td><td>✅ <b>Free forever</b> (sales, inventory, debts, reports) + <b>first month on full Max</b></td></tr><tr><td>Loyverse</td><td>Cloud</td><td>App is free; add-ons: sales history $9, advanced inventory $25/store, employees $5/employee</td><td>—</td><td>✅ Basic POS</td></tr><tr><td>Square</td><td>Cloud</td><td>Plus $49/location + card fees</td><td>Premium $149/location</td><td>✅ with 2.6% + 15¢ on every card</td></tr><tr><td>Shopify POS</td><td>Cloud</td><td>Requires a Shopify plan + POS Pro $89/location</td><td>—</td><td>❌</td></tr><tr><td>Lightspeed Retail</td><td>Cloud</td><td>Basic $89</td><td>Core $149 • Plus $289</td><td>❌</td></tr><tr><td>QuickBooks Online</td><td>Cloud accounting (no POS)</td><td>Simple Start $38</td><td>Essentials $85 • Plus $140</td><td>❌</td></tr><tr><td>Odoo</td><td>Cloud ERP</td><td>Standard ~$25–31 per user</td><td>Custom ~$49–61 per user + implementation</td><td>✅ one app only</td></tr><tr><td>Daftra</td><td>Cloud</td><td>Basic $30</td><td>Advanced $55 • Premium $70 (+$9 per user)</td><td>❌</td></tr><tr><td>Qoyod</td><td>Cloud accounting</td><td>Basic SAR 138 (~$37)</td><td>Pro SAR 207 • Advanced SAR 379</td><td>❌</td></tr><tr><td>Rewaa</td><td>Cloud (Saudi Arabia)</td><td>From ~$247 per year</td><td>On request</td><td>❌</td></tr><tr><td>Foodics</td><td>Cloud (restaurants)</td><td>From ~$54</td><td>Bundles from AED 392/month</td><td>❌</td></tr><tr><td>Wafeq</td><td>Cloud accounting</td><td>Starter SAR 119</td><td>Plus • Premium</td><td>❌</td></tr></table></div>
+<h3>2.1 Every plan at less than half the price of its global match</h3>
+<div class="table"><table><tr><th>Our plan</th><th>Our yearly price</th><th>Matching global product</th><th>Its yearly price</th><th>Saving</th></tr><tr><td>⚡ Plus (2 tills)</td><td><b>$290</b></td><td>Square for Retail Plus ($49 × 12)</td><td>$588 per location + card fees</td><td><b>51%</b></td></tr><tr><td>💎 Pro (5 tills)</td><td><b>$890</b></td><td>Lightspeed Retail Core ($149 × 12)</td><td>$1,788 — full accounting needs QuickBooks on top</td><td><b>50%</b> or more</td></tr><tr><td>👑 Max (unlimited)</td><td><b>$1,730</b></td><td>Lightspeed Retail Plus ($289 × 12)</td><td>$3,468</td><td><b>50%</b></td></tr></table></div>
+<p><b>Bottom line:</b> every plan costs less than <b>half</b> of the matching global product and includes what none of them offer (the automated financial auditor, Ask your shop in Arabic dialect, Ramadan and zakat, fully offline). Our free plan does more than Loyverse's or Square's free tiers because it includes debts, expiry, reports and VAT with no commission on sales.</p>
+<hr>
+<h2>3. Feature comparison</h2>
+<p>✅ Included • ➖ Partial or paid add-on • ❌ Not available</p>
+<div class="table"><table><tr><th>Feature</th><th>Us</th><th>Loyverse</th><th>Square</th><th>Lightspeed</th><th>Odoo</th><th>Daftra</th><th>Qoyod</th><th>Rewaa</th></tr><tr><td>Works fully <b>offline</b></td><td>✅</td><td>➖ sales only</td><td>➖ temporary mode</td><td>➖</td><td>❌</td><td>➖ top plan</td><td>❌</td><td>➖</td></tr><tr><td><b>Native Arabic</b> + English with instant switching</td><td>✅</td><td>➖</td><td>❌</td><td>❌</td><td>➖</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Scale barcodes and weighed items</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>➖</td><td>➖</td><td>✅</td></tr><tr><td>Customer debts, credit book and WhatsApp reminders</td><td>✅</td><td>❌</td><td>❌</td><td>➖</td><td>➖</td><td>✅</td><td>✅</td><td>➖</td></tr><tr><td>Customer <b>installment</b> schedules</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>➖</td><td>❌</td><td>❌</td></tr><tr><td>Post-dated cheques (incoming and outgoing)</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>➖</td><td>✅</td><td>✅</td><td>❌</td></tr><tr><td>Local e-wallets and banking apps</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>➖</td><td>➖</td><td>➖</td><td>➖</td></tr><tr><td>Expiry tracking by batch</td><td>✅</td><td>❌</td><td>❌</td><td>➖</td><td>✅</td><td>➖</td><td>❌</td><td>✅</td></tr><tr><td>Double-entry accounting + balance sheet</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>➖</td></tr><tr><td><b>Automated financial auditor</b> (47 procedures on every transaction)</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td><b>Ask your shop</b> in plain language, offline (incl. Arabic dialect)</td><td>✅</td><td>❌</td><td>➖ English, cloud</td><td>➖</td><td>➖</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td><b>Sales and cash-flow forecast</b> day by day</td><td>✅</td><td>❌</td><td>❌</td><td>➖</td><td>➖</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td><b>Ramadan and Eid planner</b> on the Hijri calendar</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td><b>Zakat calculator</b> from the books (nisab and zakat year)</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td><td>❌</td></tr><tr><td>Daily smart advisor + ABC analysis + smart reordering</td><td>✅</td><td>❌</td><td>➖</td><td>➖</td><td>➖</td><td>❌</td><td>❌</td><td>➖</td></tr><tr><td>Employees, advances and payroll</td><td>✅</td><td>➖ $5/employee</td><td>➖</td><td>➖</td><td>✅</td><td>✅</td><td>➖</td><td>❌</td></tr><tr><td>Consolidated branches report</td><td>✅</td><td>➖</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Online store with orders straight to the POS</td><td>✅</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>❌</td><td>✅</td></tr><tr><td>Owner dashboard on mobile</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Dark/light mode</td><td>✅</td><td>➖</td><td>➖</td><td>➖</td><td>✅</td><td>➖</td><td>➖</td><td>➖</td></tr><tr><td><b>No commission</b> on sales</td><td>✅</td><td>✅</td><td>❌</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr><tr><td>Your data on your computer (never locked when a subscription ends)</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td><td>➖</td><td>❌</td><td>❌</td><td>❌</td></tr></table></div>
+<hr>
+<h2>4. Where we clearly lead</h2>
+<ol>
+<li><b>Selling never stops:</b> no internet? It works. Subscription ended? It returns to Free and keeps selling. Cloud competitors stop or restrict access when the subscription lapses.
+</li>
+<li><b>No one else has these tools together:</b> Ask your shop in everyday language, cash-flow forecasting, the Hijri Ramadan planner, zakat, and the automated financial auditor.
+</li>
+<li><b>Built for shops in the region:</b> debts, installments, post-dated cheques, local wallets, the Hijri calendar and zakat are part of the program, not "add-ons".
+</li>
+<li><b>Price:</b> every plan costs less than half of the matching global product, and Free takes no cut of your sales.
+</li>
+<li><b>Privacy:</b> your figures stay on your computer; no one else sees your sales or profit.
+</li>
+</ol>
+<h2>5. Where competitors lead (honestly)</h2>
+<div class="table"><table><tr><th>Area</th><th>Who leads</th><th>What we offer today</th></tr><tr><td>Real-time cloud sync between branches in different cities</td><td>Square, Lightspeed, Odoo, Daftra</td><td>A consolidated report from branch backups in a shared folder (Google Drive/OneDrive), and a local network inside each shop</td></tr><tr><td>Years of experience with Saudi Arabia's "Fatoora" platform and listing as solution providers</td><td>Rewaa, Qoyod, Daftra, Wafeq</td><td>Full phase-2 integration built in (digital signature, hash chain, phase-2 QR, automatic reporting) that passes ZATCA's compliance checks when each shop is linked, plus Jordan's JoFotara; testing in ZATCA's sandbox before production is recommended</td></tr><tr><td>Restaurant management (tables, kitchen, menus)</td><td>Foodics, Square for Restaurants</td><td>The program is designed for retail and supermarkets</td></tr><tr><td>App marketplaces and hundreds of integrations</td><td>Shopify, Odoo, QuickBooks</td><td>Built-in integration with WhatsApp, card terminals, printers and scales</td></tr><tr><td>Company-branded POS hardware</td><td>Square, Shopify, Lightspeed</td><td>Runs on any Windows PC with any thermal printer and scanner</td></tr></table></div>
+<h2>6. Who we suit best</h2>
+<div class="table"><table><tr><th>Shop</th><th>Suggested plan</th><th>Why</th></tr><tr><td>Grocery, mini-market, small shop</td><td><b>Free</b></td><td>Selling, barcodes, debts, expiry and reports at no cost and no commission</td></tr><tr><td>A shop that wants to sell more</td><td><b>Plus</b></td><td>Smart advisor, offers and loyalty, smart reordering, installments, two tills</td></tr><tr><td>Well-run supermarket</td><td><b>Pro</b></td><td>Full accounting, audit, payroll, online store, owner dashboard, zakat, 5 tills</td></tr><tr><td>Chains and branches</td><td><b>Max</b></td><td>Everything + Ask your shop + forecasting + seasons planner + branches + unlimited tills</td></tr></table></div>
+<hr>
+<h3>Sources (October 2026)</h3>
+<ul>
+<li>Loyverse: <a href="https://www.getapp.com/retail-consumer-services-software/a/loyverse-pos/" rel="noopener" target="_blank">GetApp</a> • <a href="https://toolradar.com/tools/loyverse/pricing" rel="noopener" target="_blank">Toolradar</a>
+</li>
+<li>Square: <a href="https://www.nerdwallet.com/business/software/learn/square-fees" rel="noopener" target="_blank">NerdWallet</a> • <a href="https://www.techrepublic.com/article/square-pos-review/" rel="noopener" target="_blank">TechRepublic</a>
+</li>
+<li>Shopify POS: <a href="https://www.stylefactoryproductions.com/blog/shopify-pos-pricing" rel="noopener" target="_blank">Style Factory</a> • <a href="https://qualimero.com/en/blog/shopify-pos-pricing" rel="noopener" target="_blank">Qualimero</a>
+</li>
+<li>Lightspeed Retail: <a href="https://toolradar.com/tools/lightspeed/pricing" rel="noopener" target="_blank">Toolradar</a> • <a href="https://costbench.com/software/retail-pos/lightspeed-retail" rel="noopener" target="_blank">Costbench</a>
+</li>
+<li>QuickBooks Online: <a href="https://www.dancingnumbers.com/how-much-is-quickbooks-online-per-month/" rel="noopener" target="_blank">Dancing Numbers</a> • <a href="https://auditfriendly.co/answers/quickbooks-online-price-increase-2026" rel="noopener" target="_blank">auditfriendly</a>
+</li>
+<li>Odoo: <a href="https://octurasolutions.com/resources/odoo-pricing-2026-complete-transparent-breakdown-us-canada" rel="noopener" target="_blank">Octura Solutions</a> • <a href="https://oec.sh/odoo-pricing" rel="noopener" target="_blank">oec.sh</a>
+</li>
+<li>Daftra: <a href="https://www.daftra.com/en/plans" rel="noopener" target="_blank">daftra.com/plans</a> • <a href="https://www.trustradius.com/products/daftra/pricing" rel="noopener" target="_blank">TrustRadius</a>
+</li>
+<li>Qoyod: <a href="https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/" rel="noopener" target="_blank">Qoyod knowledge base</a>
+</li>
+<li>Rewaa: <a href="https://www.capterra.com/p/10037838/Rewaa/" rel="noopener" target="_blank">Capterra</a>
+</li>
+<li>Foodics: <a href="https://www.capterra.com/p/157590/Foodics/" rel="noopener" target="_blank">Capterra</a>
+</li>
+<li>Wafeq: <a href="https://www.wafeq.com/en-sa/business-hub/for-business/the-ultimate-guide-to-accounting-software-pricing-in-saudi-arabia" rel="noopener" target="_blank">Wafeq pricing guide</a>
+</li>
+</ul>
+</article></div>
+<footer>© الحسن للبرمجيات والإعلان — Al-Hassan Software &amp; Advertising</footer>
+</body>
+</html>

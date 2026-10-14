@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232563EB%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22%3E🏪%3C/text%3E%3C/svg%3E">
+<title>Product sheet — المحاسبة ونقاط البيع</title>
+<style>
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_400Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_700Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root { --bg: #f1f5f9; --surface: #ffffff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0; --blue: #2563eb;
+  --blue-soft: #dbeafe; --code: #f8fafc; --shadow: 0 1px 2px rgba(15,23,42,.05), 0 10px 30px rgba(15,23,42,.07); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b1220; --surface: #131c2e; --text: #e2e8f0;
+  --muted: #94a3b8; --line: #23324a; --blue: #60a5fa; --blue-soft: #172554; --code: #0f172a; --shadow: none; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 "Plex Arabic", "Segoe UI", Tahoma, system-ui, sans-serif; }
+a { color: var(--blue); }
+.top { position: sticky; top: 0; z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; }
+.logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.links { margin-inline-start: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.links a { text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 15px; }
+.links a.dl { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 700; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 28px clamp(16px, 4vw, 44px); margin: 24px auto 40px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.35; margin-top: 0; }
+h2 { margin-top: 1.8em; padding-top: .4em; border-top: 1px solid var(--line); }
+h3 { margin-top: 1.4em; }
+img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+blockquote { margin: 1em 0; padding: 10px 16px; border-inline-start: 4px solid var(--blue); background: var(--blue-soft); border-radius: 10px; }
+code { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; font-size: .92em; }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow-x: auto; direction: ltr; }
+pre code { border: 0; padding: 0; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: start; vertical-align: top; }
+th { background: var(--blue-soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+hr + h2, hr + a + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.cards a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); font-weight: 700; }
+.cards a:hover { border-color: var(--blue); background: var(--blue-soft); }
+footer { color: var(--muted); text-align: center; padding: 0 16px 32px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <a class="brand" href="../en.html"><span class="logo">🏪</span><span>المحاسبة ونقاط البيع</span></a>
+  <span class="links"><a href="index.html">📚 All guides</a><a href="../en.html">Home</a><a class="dl" href="../en.html#download">⬇ Download</a></span>
+</div></div>
+<div class="wrap"><article>
+<h1>Shop Accounting &amp; POS — Product Sheet</h1>
+<p><b>Point of sale + real accounting for grocery stores, mini-markets and small supermarkets.</b> Works fully offline on your own computer, in <b>English and Arabic</b>. <b>Free forever plan</b>, then Plus, Pro and Max — and <b>your first month is the full Max plan, free.</b></p>
+<p><img src="../img/en_pos.png" alt="Point of sale" loading="lazy"></p>
+<h2>Shop assistant</h2>
+<ul>
+<li><b>Ask your shop</b> — type a question the way you'd ask your accountant (English, Arabic or Arabic dialect): “sales yesterday?”, “who owes me money?”, “how much milk is left?”, “compare this month with last month”, “what should I prepare for Ramadan?”. Instant answers from your own data, offline. Ctrl+K from any screen.
+</li>
+<li><b>Sales &amp; cash-flow forecast</b> — next 30 days day by day with a confidence band; expected cash including salaries, cheques, purchases and collections, with a warning before cash runs short.
+</li>
+<li><b>Seasons &amp; Ramadan planner</b> — Hijri calendar: Ramadan, both Eids, back to school and summer, with last season's uplift per item, a first-order quantity and an order-by date.
+</li>
+<li><b>Zakat calculator</b> — zakat on trade goods straight from the books, nisab by gold price, Hijri or Gregorian year, next zakat date and a printable report.
+</li>
+<li><b>Dark, light or auto theme</b>, and <b>your logo</b> on every screen and every printout.
+</li>
+</ul>
+<h2>Why shop owners choose it</h2>
+<ul>
+<li><b>Fast checkout</b> — barcode, weighing-scale labels, cartons vs. pieces, hold/recall, quick keys, <code>3*barcode</code>.
+</li>
+<li><b>Never stops selling</b> — no internet needed. With several tills, cashiers keep selling even if the main computer goes down; sales sync automatically, without duplicates.
+</li>
+<li><b>Know your real profit</b> — cost of goods, discounts, returns, expenses, write-offs and cash shortages are all included. Automatic double-entry accounting gives you an income statement, balance sheet and trial balance without typing a single journal entry.
+</li>
+<li><b>Smart advisor</b> — every morning: items sold at a loss, best sellers about to run out, dead stock, customers who stopped coming, late debts, unusual cashier discounts, peak hours, items bought together.
+</li>
+<li><b>Customer credit &amp; post-dated cheques</b> — statements, credit limits, WhatsApp reminders, cheque due-date alerts, bounced cheques restore the debt automatically.
+</li>
+<li><b>Inventory done right</b> — batches &amp; expiry dates (first-expiry-first-out), stock counts, loss tracking, returns to suppliers, ABC analysis, smart reorder suggestions sent to suppliers on WhatsApp.
+</li>
+<li><b>Grow sales</b> — automatic offers (buy X get Y, bundle price, % off a category), loyalty points, wholesale price levels, bulk price updates by target margin.
+</li>
+<li><b>Control</b> — cashier shifts with cash counting, manager approval for sensitive actions, full activity log, server-side permission checks.
+</li>
+<li><b>Owner on the go</b> — dashboard on the owner's phone and a daily WhatsApp summary.
+</li>
+<li><b>VAT ready</b> — output and input VAT with a VAT return report, and an e-invoice QR code on receipts (Saudi simplified tax invoice format).
+</li>
+<li><b>Connected e-invoicing (optional)</b> — Saudi Fatoora phase 2 (UBL 2.1, ECDSA digital signature, invoice hash chain, phase-2 QR, onboarding with ZATCA compliance checks, background reporting) and Jordan's national system JoFotara (official QR printed on the receipt). Selling continues offline; invoices are sent when the connection returns.
+</li>
+<li><b>No small change</b> — round any invoice up to a whole number with one tap (or by default); the difference goes to its own account outside VAT and is refunded on a full return.
+</li>
+<li><b>Price changes handled properly</b> — returns are refunded at the original invoice price, price overrides at the till keep both prices for the auditor, and an automatic <b>shelf-label queue</b> collects every item whose price changed.
+</li>
+<li><b>Phone app with an offline copy</b> — staff and owner app on the shop Wi-Fi (prices and stock counts by camera, low stock, debts with WhatsApp reminders, orders, ask your shop); on connecting the owner chooses <b>Sync</b> to keep the data up to the last close on the phone (till closings, this month and the last 30 days, prices, low stock, debts) and open it anywhere without a connection, or <b>Stay connected</b>.
+</li>
+<li><b>Online ordering</b> — a mobile store page for pickup or delivery orders; orders become POS invoices in one click. No commissions to delivery apps.
+</li>
+<li><b>Android app</b> — finds the shop automatically on Wi-Fi. Tabs by permission: today's figures, price and stock lookup with shelf counts by camera, low stock, customers and debts with WhatsApp reminders, handling online orders, and Ask your shop; plus the owner dashboard.
+</li>
+<li><b>Card terminal ready</b> — sends the amount to the bank card terminal and prints the approval code on the receipt (bank-specific connection required).
+</li>
+<li><b>Simple mode &amp; touch screens</b> — a lighter layout for small corner shops, big buttons and an on-screen keypad for touch tills.
+</li>
+<li><b>Easy switch</b> — import your old credit book (customers, suppliers and balances) from Excel in a minute.
+</li>
+<li><b>E-wallets &amp; banking apps</b> — one tap per method (e.g. instant bank transfer, mobile wallets): shows your account and QR code to the customer, records the transaction number, keeps a separate e-wallet account in the books, and a reconciliation report per method.
+</li>
+<li><b>Daily, weekly, monthly and yearly summaries</b> — sales, profit, expenses and payment mix per period, adding up exactly to the profit report.
+</li>
+<li><b>Training copy with 3 years of data</b> — a complete supermarket history (online orders, current and former staff, three branches) to train staff and explore reports without touching real data; opens from inside the program.
+</li>
+<li><b>Multi-currency cash</b> — accept cash in other currencies at your exchange rate.
+</li>
+<li><b>Your data stays yours</b> — stored on your computer with daily backups and an optional cloud copy (Google Drive / OneDrive).
+</li>
+<li><b>Built-in financial auditor</b> — 47 audit procedures on every transaction (not a sample): ledger reconciliations, document sequence gaps, cashier fraud indicators (quick sale-and-refund by the same cashier, after-hours sales, cash refunds on card sales, reused wallet references, repeated shortages, manual price cuts), purchase-cost jumps, duplicate customers, payroll anomalies, bank reconciliation, e-invoice reporting, debt aging with a doubtful-debt allowance, Benford's law, data-file integrity. Gives a clean/qualified/adverse opinion, a score out of 100 and a printable report.
+</li>
+<li><b>Ready for the financial inspector or tax auditor</b> — a temporary, view-only inspector account (the database itself opens read-only for them) that expires on its own, with every screen they open logged; a readiness check before the visit; and a one-click inspector file: the whole period in Excel-ready CSV plus a SAF-T (XML) standard audit file, financial statements and the audit report, each file SHA-256 fingerprinted with a signed handover record.
+</li>
+<li><b>Accountant autopilot</b> — comparative income statement, 12 financial ratios explained in plain words (liquidity, cash cycle, break-even, cash runway…), bank reconciliation, fixed assets with automatic depreciation, cash flow statement and one-click month close that locks the books.
+</li>
+<li><b>Payroll</b> — monthly salaries, bonuses and deductions, advances deducted automatically from the next salary, payslips for any past month and an employee statement, all flowing into expenses, profit and the cash drawer.
+</li>
+<li><b>Customer installments</b> — split a customer's debt into a dated schedule; payments are applied to the oldest installment, overdue ones trigger advisor alerts and WhatsApp reminders.
+</li>
+<li><b>Branches &amp; chains</b> — each branch works independently; the owner sees every branch and the total in one report, read from a shared Google Drive folder.
+</li>
+<li><b>Everyday tools</b> — a calculator on every screen (Ctrl+=) that inserts its result into the field you were typing in; math inside every amount field (<code>12*3.5+4</code>, <code>100+16%</code>); a pricing calculator from cost and target margin to the shelf price incl. VAT and back; notes and repeating reminders shared with your staff; and one-click updates that verify, back up, install and reopen.
+</li>
+<li><b>Fits any screen, any language</b> — modern mobile-app style interface that adapts to small laptops, and switches between Arabic and English instantly.
+</li>
+</ul>
+<div class="table"><table><tr><th></th><th></th></tr><tr><td><img src="../img/en_dashboard.png" alt="Dashboard" loading="lazy"></td><td><img src="../img/en_accounting.png" alt="Accounting" loading="lazy"></td></tr><tr><td><img src="../img/en_insights.png" alt="Smart advisor" loading="lazy"></td><td><img src="../img/owner_mobile.png" alt="Owner phone dashboard" loading="lazy"></td></tr></table></div>
+<h2>Plans (yearly, USD) — less than half the price of the matching global product</h2>
+<div class="table"><table><tr><th>Plan</th><th>Tills</th><th>Per year</th><th>Matching global product (per year)</th><th>Adds</th></tr><tr><td>🌱 Free</td><td>1</td><td><b>$0 forever</b></td><td>—</td><td>POS, inventory &amp; expiry, customer/supplier debts, cards &amp; e-wallets, shifts, reports &amp; VAT, mobile price-check app</td></tr><tr><td>⚡ Plus</td><td>2</td><td><b>$290</b> (≈ $24/mo)</td><td>Square Plus $588</td><td>Smart advisor, smart reorder, offers &amp; loyalty, cheques, installments, stock counting from phone</td></tr><tr><td>💎 Pro</td><td>5</td><td><b>$890</b> (≈ $74/mo)</td><td>Lightspeed Retail Core $1,788</td><td>Accounting &amp; balance sheet, accountant autopilot, financial audit, payroll, online store, owner dashboard, zakat</td></tr><tr><td>👑 Max</td><td>unlimited</td><td><b>$1,730</b> (≈ $144/mo)</td><td>Lightspeed Retail Plus $3,468</td><td>Ask your shop, forecasting, seasons planner, branches</td></tr></table></div>
+<p><b>First 30 days: the full Max plan, free.</b> Afterwards the program moves to Free — <b>selling never stops</b> and your data is never locked. See <a href="en-comparison.html">how we compare</a> with 11 Arab and global products.</p>
+<h2>Requirements</h2>
+<p>Windows 10/11 PC, any thermal receipt printer (58/80 mm), USB barcode scanner, optional cash drawer and customer display. Multiple tills connect over the shop's local network.</p>
+<p><b>Contact:</b> Al-Hassan Software &amp; Advertising — Abdulrahman Al-Abed — WhatsApp <b>+970 59 245 8157</b></p>
+</article></div>
+<footer>© الحسن للبرمجيات والإعلان — Al-Hassan Software &amp; Advertising</footer>
+</body>
+</html>

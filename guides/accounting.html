@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Crect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232563EB%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22%3E🏪%3C/text%3E%3C/svg%3E">
+<title>المحاسبة ببساطة — المحاسبة ونقاط البيع</title>
+<style>
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_400Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Plex Arabic"; src: url("../fonts/IBMPlexSansArabic_700Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root { --bg: #f1f5f9; --surface: #ffffff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0; --blue: #2563eb;
+  --blue-soft: #dbeafe; --code: #f8fafc; --shadow: 0 1px 2px rgba(15,23,42,.05), 0 10px 30px rgba(15,23,42,.07); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0b1220; --surface: #131c2e; --text: #e2e8f0;
+  --muted: #94a3b8; --line: #23324a; --blue: #60a5fa; --blue-soft: #172554; --code: #0f172a; --shadow: none; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 "Plex Arabic", "Segoe UI", Tahoma, system-ui, sans-serif; }
+a { color: var(--blue); }
+.top { position: sticky; top: 0; z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.top .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; }
+.logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.links { margin-inline-start: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.links a { text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); font-size: 15px; }
+.links a.dl { background: var(--blue); color: #fff; border-color: var(--blue); font-weight: 700; }
+article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow);
+  padding: 28px clamp(16px, 4vw, 44px); margin: 24px auto 40px; overflow-wrap: anywhere; }
+h1 { font-size: clamp(26px, 4vw, 34px); line-height: 1.35; margin-top: 0; }
+h2 { margin-top: 1.8em; padding-top: .4em; border-top: 1px solid var(--line); }
+h3 { margin-top: 1.4em; }
+img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); }
+blockquote { margin: 1em 0; padding: 10px 16px; border-inline-start: 4px solid var(--blue); background: var(--blue-soft); border-radius: 10px; }
+code { background: var(--code); border: 1px solid var(--line); border-radius: 6px; padding: 0 5px; font-size: .92em; }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 12px; padding: 12px; overflow-x: auto; direction: ltr; }
+pre code { border: 0; padding: 0; }
+.table { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: start; vertical-align: top; }
+th { background: var(--blue-soft); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2em 0; }
+hr + h2, hr + a + h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.cards a { display: block; padding: 16px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: var(--text); font-weight: 700; }
+.cards a:hover { border-color: var(--blue); background: var(--blue-soft); }
+footer { color: var(--muted); text-align: center; padding: 0 16px 32px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">
+  <a class="brand" href="../index.html"><span class="logo">🏪</span><span>المحاسبة ونقاط البيع</span></a>
+  <span class="links"><a href="index.html">📚 كل الأدلة</a><a href="../index.html">الصفحة الرئيسية</a><a class="dl" href="../index.html#download">⬇ تحميل</a></span>
+</div></div>
+<div class="wrap"><article>
+<h1>المحاسبة ببساطة — لغير المحاسبين</h1>
+<blockquote><p>هذا الدليل لك أنت (المطوّر/المسوّق) ولزبائنك من أصحاب المحلات. لا تحتاج أي خلفية محاسبية. الهدف: أن تفهم ما يعرضه البرنامج، وتشرحه للزبون بثقة، وتجيب عن أسئلته.</p></blockquote>
+<hr>
+<h2>الدرس 1: خمس كلمات تكفي لفهم أي محل</h2>
+<p>تخيّل محلاً اسمه «بقالة الأمل». كل شيء فيه ينتمي لواحدة من خمس خانات:</p>
+<div class="table"><table><tr><th>الخانة</th><th>المعنى بلغة الدكان</th><th>أمثلة</th><th>رقم الحساب في البرنامج يبدأ بـ</th></tr><tr><td><b>الأصول</b></td><td>ما يملكه المحل</td><td>النقد في الدرج، رصيد البنك، البضاعة على الرفوف، ديون الزبائن، الثلاجات</td><td><b>1</b></td></tr><tr><td><b>الالتزامات (الخصوم)</b></td><td>ما على المحل للآخرين</td><td>ما ندين به للموردين، شيكات أعطيناها ولم تُصرف، قرض، ضريبة مستحقة، نقاط ولاء لم يستبدلها الزبائن بعد</td><td><b>2</b></td></tr><tr><td><b>حقوق الملكية</b></td><td>حق صاحب المحل</td><td>رأس المال الذي وضعه + الأرباح المتراكمة − ما سحبه لنفسه</td><td><b>3</b></td></tr><tr><td><b>الإيرادات</b></td><td>ما يدخل من البيع</td><td>المبيعات</td><td><b>4</b></td></tr><tr><td><b>المصروفات</b></td><td>ما يُصرف لتشغيل المحل</td><td>تكلفة البضاعة المباعة، الإيجار، الكهرباء، الرواتب، التالف</td><td><b>5</b> و <b>6</b></td></tr></table></div>
+<h3>القاعدة الذهبية (معادلة الميزانية)</h3>
+<pre><code>ما يملكه المحل  =  ما عليه للآخرين  +  حق صاحبه
+     الأصول     =      الالتزامات     +  حقوق الملكية</code></pre>
+<p><b>مثال:</b> في المحل بضاعة بـ 50,000، ونقد 3,000، وديون على الزبائن 2,000 ← الأصول 55,000. على المحل للموردين 5,000 ← الالتزامات 5,000. إذن <b>حق صاحب المحل = 50,000</b>. هذا هو «كم يساوي محلي».</p>
+<blockquote><p>في البرنامج: <b>المحاسبة والميزانية ← الميزانية العمومية</b> تعرض هذه الأرقام الثلاثة في أعلى الشاشة مباشرة.</p></blockquote>
+<hr>
+<h2>الدرس 2: الربح — مجمل وصافي</h2>
+<pre><code>المبيعات
+− المرتجعات
+= صافي المبيعات
+− تكلفة البضاعة المباعة      (بكم اشترينا ما بعناه)
+= مجمل الربح                (ربح البضاعة نفسها)
+− المصاريف (إيجار، كهرباء، رواتب...)
+− خسائر المخزون (تالف، منتهي، سرقة)
+± عجز أو زيادة الصندوق
+= صافي الربح                (ما يبقى فعلاً في جيب صاحب المحل)</code></pre>
+<p><b>مثال بيوم واحد:</b> بعنا بـ 1,000. تكلفة ما بعناه 780 ← مجمل الربح 220 (هامش 22%). دفعنا كهرباء 60 وأتلفنا لبنة منتهية تكلفتها 20 ← صافي الربح 140.</p>
+<p><b>أخطاء شائعة يقع فيها أصحاب المحلات (والبرنامج يتجنبها):</b></p>
+<ol>
+<li>«بعت اليوم بـ 1,000 إذن ربحت 1,000» ← خطأ؛ الربح بعد طرح تكلفة البضاعة.
+</li>
+<li>«الدرج فيه 500 زيادة عن الصباح إذن ربحي 500» ← خطأ؛ ربما لأنك لم تدفع للمورد، أو زبون سدد ديناً قديماً.
+</li>
+<li>نسيان الخصومات والمرتجعات والتالف ← أرباح وهمية.
+</li>
+</ol>
+<blockquote><p>في البرنامج: <b>التقارير ← الأرباح والخسائر</b>، أو <b>المحاسبة ← قائمة الدخل</b>. الاثنان يعطيان نفس الصافي.</p></blockquote>
+<h3>هامش الربح مقابل نسبة الإضافة (سؤال يتكرر كثيراً)</h3>
+<ul>
+<li>اشتريت بـ 8 وبعت بـ 10.
+</li>
+<li><b>نسبة الإضافة (Markup)</b> = 2 ÷ 8 = 25%.
+</li>
+<li><b>هامش الربح (Margin)</b> = 2 ÷ 10 = 20%. ← هذا ما يعرضه البرنامج في «هامش».
+</li>
+</ul>
+<hr>
+<h2>الدرس 3: تكلفة البضاعة و«المتوسط المرجّح»</h2>
+<p>اشتريت 10 علب تونة بـ 3 ثم 10 أخرى بـ 4 (ارتفع السعر). ما تكلفة العلبة؟ <b>المتوسط المرجّح</b> = (10×3 + 10×4) ÷ 20 = <b>3.5</b>. البرنامج يحدّث تكلفة الصنف تلقائياً مع كل فاتورة مشتريات بهذه الطريقة، فتكون الأرباح دقيقة حتى مع تغيّر الأسعار.</p>
+<hr>
+<h2>الدرس 4: النقد ليس ربحاً — الصندوق والبنك وجاري المالك</h2>
+<ul>
+<li><b>الصندوق (1110):</b> النقد الموجود فعلاً في أدراج الكاشير.
+</li>
+<li><b>البنك (1120):</b> مبيعات البطاقة والتحويلات والشيكات التي صُرفت.
+</li>
+<li><b>جاري المالك (3120):</b> كل مال يأخذه المالك من الدرج لنفسه، أو يدفعه من جيبه للمحل (مثل إيجار دفعه من خارج الصندوق).
+</li>
+</ul>
+<p><b>لماذا مهم؟</b> لأن المالك الذي يأخذ من الدرج يومياً ولا يسجل ذلك يظن أن المحل يخسر أو أن الكاشير يسرق. البرنامج يسجل ذلك تلقائياً:</p>
+<ul>
+<li>«سحب نقدي» من شاشة الصندوق ← يُسجَّل على جاري المالك.
+</li>
+<li>إذا أغلقت وردية فيها 1,500 وفتحت التالية بـ 200 ← البرنامج يفهم أن 1,300 أخذها المالك.
+</li>
+<li>مصروف «ليس من الصندوق» ← دفعه المالك من جيبه.
+</li>
+</ul>
+<hr>
+<h2>الدرس 5: الديون والشيكات</h2>
+<ul>
+<li><b>ذمم العملاء (1210):</b> مجموع الديون على الزبائن («الدفتر»). بيع آجل يزيدها، تسديد ينقصها.
+</li>
+<li><b>ذمم الموردين (2110):</b> ما علينا للموردين. فاتورة مشتريات غير مدفوعة تزيدها، الدفعة تنقصها.
+</li>
+<li><b>الشيك المؤجل الوارد (1130):</b> زبون أعطاك شيكاً بتاريخ لاحق. دينه ينقص <b>فوراً</b>، لكن المال لم يصل البنك بعد. عند الاستحقاق:
+<ul>
+<li><b>صُرف</b> ← انتقل المبلغ للبنك.
+</li>
+<li><b>راجع</b> ← يعود الدين على الزبون تلقائياً.
+</li>
+</ul>
+</li>
+<li><b>الشيك المؤجل الصادر (2120):</b> أعطيت المورد شيكاً. ما عليك للمورد ينقص، لكنه صار التزاماً على حسابك البنكي حتى يُصرف. <b>شاهد تنبيه «شيكات تستحق خلال أسبوع» حتى لا يرجع شيكك!</b>
+</li>
+</ul>
+<hr>
+<h2>الدرس 6: القيد المزدوج — لماذا «مدين» و«دائن»؟</h2>
+<p>كل عملية تمس حسابين على الأقل، ومجموع جانب <b>المدين</b> يساوي مجموع جانب <b>الدائن</b> دائماً. قاعدة سهلة:</p>
+<ul>
+<li><b>المدين</b> = أين ذهبت القيمة (زاد أصل أو مصروف).
+</li>
+<li><b>الدائن</b> = من أين جاءت القيمة (زاد التزام أو إيراد أو حق ملكية، أو نقص أصل).
+</li>
+</ul>
+<div class="table"><table><tr><th>العملية</th><th>مدين (ذهبت إلى)</th><th>دائن (جاءت من)</th></tr><tr><td>بيع نقدي بـ 100 (تكلفته 80)</td><td>الصندوق 100 / تكلفة البضاعة 80</td><td>المبيعات 100 / المخزون 80</td></tr><tr><td>بيع آجل لأبو أحمد بـ 50</td><td>ذمم العملاء 50</td><td>المبيعات 50</td></tr><tr><td>أبو أحمد سدد 50 نقداً</td><td>الصندوق 50</td><td>ذمم العملاء 50</td></tr><tr><td>فاتورة مشتريات 1,000 من المورد غير مدفوعة</td><td>المخزون 1,000</td><td>ذمم الموردين 1,000</td></tr><tr><td>دفعت للمورد 400 من الدرج</td><td>ذمم الموردين 400</td><td>الصندوق 400</td></tr><tr><td>كهرباء 60 من الدرج</td><td>مصاريف - كهرباء 60</td><td>الصندوق 60</td></tr><tr><td>إتلاف لبنة منتهية تكلفتها 20</td><td>خسائر المخزون 20</td><td>المخزون 20</td></tr><tr><td>المالك وضع 20,000 في البنك رأس مال</td><td>البنك 20,000</td><td>رأس المال 20,000</td></tr></table></div>
+<blockquote><p><b>البرنامج يكتب كل هذه القيود وحده.</b> شاهدها في <b>المحاسبة ← دفتر اليومية</b>. القيد اليدوي مطلوب فقط لعمليات خارج البيع والشراء (رأس مال، قرض، شراء ثلاجة...)، وله نافذة «عملية مالية» جاهزة: تختار العملية وتكتب المبلغ.</p></blockquote>
+<hr>
+<h2>الدرس 7: التقارير المحاسبية الأربعة وما يسأل عنه كلٌّ منها</h2>
+<div class="table"><table><tr><th>التقرير</th><th>السؤال الذي يجيب عنه</th><th>لمن</th></tr><tr><td><b>قائمة الدخل</b></td><td>هل ربحت في هذه الفترة؟ كم؟</td><td>المالك</td></tr><tr><td><b>الميزانية العمومية</b></td><td>كم يساوي محلي اليوم؟ ماذا أملك وماذا عليّ؟</td><td>المالك، البنك عند طلب قرض</td></tr><tr><td><b>ميزان المراجعة</b></td><td>هل كل الحسابات متوازنة؟ ما رصيد كل حساب؟</td><td>المحاسب القانوني، الضريبة</td></tr><tr><td><b>كشف حساب</b></td><td>كل حركة على حساب واحد (البنك مثلاً) مع الرصيد</td><td>المالك والمحاسب للمطابقة</td></tr></table></div>
+<blockquote><p><b>نصيحة للبيع:</b> قل للزبون: «في آخر السنة، بدل أن تدفع للمحاسب أياماً ليجمع دفاترك، اطبع له ميزان المراجعة والميزانية من البرنامج في دقيقة».</p></blockquote>
+<hr>
+<h2>الدرس 8: ضريبة القيمة المضافة (إن كان المحل مسجلاً)</h2>
+<ul>
+<li>إذا كانت الأسعار <b>شاملة للضريبة</b> (الأشيع): سعر 116 بنسبة 16% ← منه 16 ضريبة و100 إيراد.
+</li>
+<li>الضريبة ليست ربحاً؛ هي أمانة للدولة. لذلك يطرحها البرنامج من الإيراد ويضعها في حساب <b>ضريبة مستحقة (2210)</b>.
+</li>
+<li>ضريبة المشتريات (المدخلات) تُكتب مع فاتورة المشتريات من فاتورة المورد. تقرير <b>ضريبة القيمة المضافة</b> يطرحها من ضريبة المبيعات ويعطيك الصافي المستحق للدفع.
+</li>
+</ul>
+<hr>
+<h2>الدرس 9: الجرد والعجز</h2>
+<ul>
+<li><b>الجرد:</b> عدّ البضاعة على الرف وإدخال الرقم الفعلي. البرنامج يحسب الفرق:
+<ul>
+<li>نقص ← <b>خسارة مخزون</b> (تُطرح من الربح).
+</li>
+<li>زيادة ← تُنقص الخسارة.
+</li>
+</ul>
+</li>
+<li><b>عجز الصندوق:</b> عند إغلاق الوردية تعدّ النقود؛ إذا كان المعدود أقل من المتوقع فهو عجز يظهر في التقارير وفي «عجز الصندوق (5130)».
+</li>
+<li><b>نصيحة:</b> جرد دوري لأصناف غالية (دخان، حليب أطفال، زيوت) أسبوعياً، وجرد كامل كل 3-6 أشهر.
+</li>
+</ul>
+<hr>
+<h2>الدرس 10: قاموس سريع</h2>
+<div class="table"><table><tr><th>المصطلح</th><th>معناه ببساطة</th></tr><tr><td>ذمم مدينة</td><td>ديون لنا على الزبائن</td></tr><tr><td>ذمم دائنة</td><td>ديون علينا للموردين</td></tr><tr><td>رصيد مدين/دائن</td><td>للأصول والمصروفات الطبيعي «مدين»، وللخصوم والإيرادات وحقوق الملكية «دائن»</td></tr><tr><td>تكلفة البضاعة المباعة</td><td>سعر شراء ما بعناه</td></tr><tr><td>مجمل الربح</td><td>المبيعات − تكلفة البضاعة</td></tr><tr><td>صافي الربح</td><td>مجمل الربح − كل المصاريف والخسائر</td></tr><tr><td>رأس المال العامل</td><td>الأصول المتداولة (نقد، بنك، بضاعة، ديون) − الالتزامات القصيرة</td></tr><tr><td>جاري المالك / المسحوبات</td><td>ما أخذه المالك لنفسه من مال المحل</td></tr><tr><td>الأرصدة الافتتاحية</td><td>ما كان موجوداً قبل استخدام البرنامج (بضاعة، ديون قديمة)</td></tr><tr><td>FEFO</td><td>بيع الأقرب انتهاءً أولاً</td></tr><tr><td>الأصناف الراكدة</td><td>بضاعة لم تُبع منذ مدة = مال مجمّد</td></tr><tr><td>متوسط السلة</td><td>متوسط قيمة الفاتورة؛ رفعه بالعروض يزيد المبيعات</td></tr></table></div>
+<hr>
+<h2>اختبر نفسك (الإجابات في الأسفل)</h2>
+<ol>
+<li>محل فيه بضاعة 30,000 ونقد 2,000 وعليه للموردين 7,000. كم حق المالك؟
+</li>
+<li>بعت بـ 500 وتكلفة ما بعته 400، ودفعت إيجار اليوم 30. ما مجمل الربح وصافيه؟
+</li>
+<li>زبون أعطاك شيكاً بـ 1,000 يستحق بعد شهر. هل زاد رصيد البنك اليوم؟
+</li>
+<li>أخذت 200 من الدرج لمصروف البيت. هل هذا مصروف على المحل؟
+</li>
+<li>سعر الشراء 4 والبيع 5. ما هامش الربح؟
+</li>
+</ol>
+<p><b>الإجابات:</b> 1) 25,000. 2) مجمل 100، صافي 70. 3) لا؛ نقص دين الزبون فقط، والمبلغ في «شيكات برسم التحصيل» حتى يُصرف. 4) لا؛ هو سحب على جاري المالك ولا يُنقص ربح المحل. 5) 20%.</p>
+</article></div>
+<footer>© الحسن للبرمجيات والإعلان — Al-Hassan Software &amp; Advertising</footer>
+</body>
+</html>
